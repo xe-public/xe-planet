@@ -153,6 +153,7 @@
     $lang->planet_best = "熱門討論";
     $lang->planet_catch = "文章選擇";
     $lang->planet_fish = "選擇文章";
+    $lang->planet_call = '소환 글';
     $lang->planet_bigfish = "熱門討論";
     $lang->cmd_send_me2day = "me2day傳送";
 

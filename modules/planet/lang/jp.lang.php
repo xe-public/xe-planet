@@ -156,6 +156,7 @@
     $lang->planet_best = 'ベスト';
     $lang->planet_catch = '選んだ記事';
     $lang->planet_fish = '選ばれた記事';
+    $lang->planet_call = '소환 글';
     $lang->planet_bigfish = 'ベスト';
     $lang->cmd_send_me2day = 'me2day送信';
 

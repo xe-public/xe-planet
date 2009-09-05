@@ -210,6 +210,9 @@
                 case 'fishing':
                         $output = $this->planet->getFishingContentList($page);
                     break;
+                case 'calling':
+                        $output = $this->planet->getCallingContentList($page);
+                    break;
                 case 'interest':
                         $output = $this->planet->getInterestTagContentList($date, $page);
                     break;

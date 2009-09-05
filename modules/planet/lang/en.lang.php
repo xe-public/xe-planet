@@ -153,6 +153,7 @@
     $lang->planet_best = "Most discussed";
     $lang->planet_catch = "Fished others";
     $lang->planet_fish = "You fished";
+    $lang->planet_call = '소환 글';
     $lang->planet_bigfish = "Most discussed";
     $lang->cmd_send_me2day = "Me2day";
 

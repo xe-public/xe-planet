@@ -156,6 +156,7 @@
     $lang->planet_best = "回复排行";
     $lang->planet_catch = "跟我帖";
     $lang->planet_fish = "我跟帖";
+    $lang->planet_call = '소환 글';
     $lang->planet_bigfish = "回复排行";
     $lang->cmd_send_me2day = "发送到me2";
 

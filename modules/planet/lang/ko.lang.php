@@ -156,6 +156,7 @@
     $lang->planet_best = '월척';
     $lang->planet_catch = '낚은 글';
     $lang->planet_fish = '낚인 글';
+    $lang->planet_call = '소환 글';
     $lang->planet_bigfish = '월척';
     $lang->cmd_send_me2day = '미투발송';
 
