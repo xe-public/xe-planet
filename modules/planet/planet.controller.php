@@ -217,7 +217,7 @@
             $obj->content = preg_replace('/"([^"]+)":(http|ftp|https|mms)([^ ]+)/is','<a href="$2$3" onclick="window.open(this.href);return false;">$1</a>$4', $obj->content);
 
             //$obj->content = preg_replace_callback('/@([^ ]+)( |$)/is', array($this,'_replace_nickname'), $obj->content);
-			preg_match_all('/@([^ ]+)( |$)/is',$obj->content,$match);
+			preg_match_all('/@([^\"@ ]+)( |$)/is',$obj->content,$match);
 
 			$calling = array();
 			if($match[1] && is_array($match[1])){
@@ -671,7 +671,7 @@
             $obj->document_srl = $req->document_srl;
             $obj->content = $req->planet_reply_content;
 
-			preg_match_all('/@([^ ]+)( |$)/is',$obj->content,$match);
+			preg_match_all('/@([^\"@ ]+)( |$)/is',$obj->content,$match);
 
 			$calling = array();
 			if($match[1] && is_array($match[1])){
