@@ -222,6 +222,7 @@
                         $output = $this->planet->getNewestContentList($date, $page, 10,$sort_index,$order);
                     break;
             }
+
             Context::set('content_list', $output->data);
             Context::set('total_count', $output->total_count);
             Context::set('total_page', $output->total_page);
@@ -233,6 +234,12 @@
             $args->module_srl = $this->planet->getModuleSrl();
             $output = executeQuery('planet.getTotalContents', $args);
             Context::set('total_content', $output->data->count);
+
+			$args->regdate = date('Ymd');
+            $output = executeQuery('planet.getCallingTodayContentCount', $args);
+            Context::set('total_calling', $output->data->count);
+			unset($args->regdate);
+
 
             // 낚은 글 수
             $output = executeQuery('planet.getCatchContentCount', $args);

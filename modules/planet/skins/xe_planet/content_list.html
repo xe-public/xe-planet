@@ -1,7 +1,7 @@
 <!--%import("./filter/delete_planet_document.xml")-->
 <!--%import("./filter/delete_planet_comment.xml")-->
 
-<!--@if($date && !($act=='dispPlanetLogin' || $act=='dispPlanetContentTagSearch' || $act=='dispPlanetTagSearch' || $act=='dispPlanetContentSearch') && ( $type != "catch" && $type != "fishing"))-->
+<!--@if($date && !($act=='dispPlanetLogin' || $act=='dispPlanetContentTagSearch' || $act=='dispPlanetTagSearch' || $act=='dispPlanetContentSearch') && ( $type != "calling" && $type != "catch" && $type != "fishing"))-->
     <div class="timeNav">
         <!--@if($prev_date)-->
             <a class="prev" href="{getUrl('date',$prev_date, 'document_srl','')}" title="{$lang->cmd_prev}">&lt;</a>
