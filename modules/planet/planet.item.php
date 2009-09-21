@@ -1,6 +1,6 @@
 <?php
 
-    require_once("./modules/document/document.item.php");
+    require_once(_XE_PATH_.'modules/document/document.item.php');
 
     class planetItem extends documentItem {
 
@@ -39,40 +39,40 @@
         function getUserID() {
             return parent::getUserID();
         }
-        
+
         function getUserName() {
             return parent::getUserName();
         }
-        
+
         function getNickName() {
             return parent::getNickName();
         }
 
-        
+
         function getPostScript() {
             return $this->getExtraValue(20);
         }
-        
-		function getContent($add_popup_menu = false, $add_content_info = true, $resource_realpath = false, $add_xe_content_class = true) {
+
+        function getContent($add_popup_menu = false, $add_content_info = true, $resource_realpath = false, $add_xe_content_class = true) {
             if(!$this->document_srl) return;
             return parent::getContent($add_popup_menu, $add_content_info, $resource_realpath, $add_xe_content_class);
         }
-        
+
         function getArrTags() {
             return $this->get('tag_list');
         }
-		
-		function getTextTags() {
+
+        function getTextTags() {
             return $this->get('tags');
         }
-        
+
         function getRegdate(){
-        	return $this->get('regdate');
+            return $this->get('regdate');
         }
-        
+
         function getVotedCount(){
-        	return $this->get('voted_count');
-        	
+            return $this->get('voted_count');
+
         }
 
         function PopularTags($list_count = 100, $shuffle = false) {
