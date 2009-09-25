@@ -11,7 +11,13 @@
             <span class="tooltipLB"></span>
             <span class="tooltipRB"></span>
             <span class="tooltipArrow"></span>
-            <span class="content">{$item->getContent()}</span>
+            <span class="content">
+                <!--@if($widget_info->content_cut_size)-->
+                {$item->getContentText($widget_info->content_cut_size)} 
+                <!--@else-->
+                {$item->getContent()} 
+                <!--@end-->
+            </span>
 	    </div>
     </div>
 <!--@end-->

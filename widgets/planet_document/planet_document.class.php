@@ -63,6 +63,7 @@
             if(!$args->show_author_name) $args->show_author_name = "N";
             $widget_info->show_number_of_comments = $args->show_number_of_comments;
             $widget_info->show_author_name = $args->show_author_name;
+            $widget_info->content_cut_size = $args->content_cut_size;
             Context::set('widget_info', $widget_info);
 
             // 템플릿 컴파일

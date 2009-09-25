@@ -151,5 +151,13 @@
                 <name xml:lang="jp">非表示</name>
             </options>
         </var>
+        <var id="content_cut_size">
+            <type>text</type>
+            <name xml:lang="ko">내용 글자수</name>
+			<name xml:lang="en">Content Length</name>
+            <name xml:lang="jp">内容の文字数</name>
+			<name xml:lang="zh-CN">内容摘要字数</name>
+			<name xml:lang="zh-TW">內容字數</name>
+        </var>
 	</extra_vars>
 </widget>
