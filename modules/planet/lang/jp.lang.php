@@ -19,15 +19,15 @@
     $lang->planet_reply_content = 'プラネットのコメント内容';
 
     $lang->about_planet =
-       "microBlogのXEモジュールです。会員別のプラネットを作成して運営することが出来ます。
-        ホームページパッケージで登録されているドメインからプラネットへアクセス出来ない場合もあります。
-        プラネットを初期ページとして利用する場合は、ホームページパッケージで登録されているドメインと異なるドメインを登録して下さい。";
+       "microBlogのXEモジュールです。会員別のプラネットを開設して運営することが出来ます。
+        Cafeパッケージで登録されているドメインからプラネットへアクセス出来ない場合もあります。
+        プラネットを初期ページとして利用する場合は、Cafeパッケージで登録されているドメインと異なるドメインを登録して下さい。";
 
     $lang->planet_mid = 'プラネットアクセスアドレス';
     $lang->about_planet_mid = 'プラネットアクセスアドレスは「http://XEアドレス/プラネットアクセスアドレス」のようにダイレクトで接続出来るアドレスを指します。';
 
     $lang->planet_default_skin = 'プラネット基本スキン';
-    $lang->about_planet_default_skin = 'プラネットメインページ及び作成されたプラネットの基本スキンに設定されます。';
+    $lang->about_planet_default_skin = 'プラネットメインページ及び開設されたプラネットの基本スキンに設定されます。';
 
     $lang->planet_comment = 'プラネット簡単紹介';
     $lang->about_planet_comment = 'プラネット簡単紹介はプラネットに接続した時ブラウザのタイトル及びプラネットの簡単紹介欄に表示される内容です。';
@@ -36,16 +36,16 @@
     $lang->about_use_signup = '会員登録ボタン表示を選択するとプラネットの上段メニュに会員登録が出来るボタンが表示されます。';
 
 
-    $lang->cmd_create_planet = 'マイプラネット作成';
-    $lang->create_message = 'マイプラネット作成案内文';
-    $lang->about_create_message = 'プラネット作成時に表示される案内文が入力出来ます。';
+    $lang->cmd_create_planet = 'マイプラネット開設';
+    $lang->create_message = 'マイプラネット開設案内文';
+    $lang->about_create_message = 'プラネット開設時に表示される案内文が入力出来ます。';
 
     $lang->cmd_planet_setup = '基本設定';
     $lang->cmd_planet_list = 'プラネットリスト';
 
     $lang->msg_not_logged = 'ログインしていません。';
-    $lang->msg_planet_exists = '既に作成したプラネットがありますので、新しく作成することが出来ません。';
-    $lang->msg_denied_planet_title = '禁止されたプラネットタイトルです。';
+    $lang->msg_planet_exists = '既に開設したプラネットがありますので、新しく開設することが出来ません。';
+    $lang->msg_denied_planet_title = 'プラネットに禁止された情報が入力されています。もう一度確認して下さい。';
 
     $lang->planet_userinfo = '個人情報';
     $lang->planet_change_userinfo = '個人情報変更';
@@ -84,19 +84,19 @@
     $lang->about_planet_input_search_text = '検索語入力';
 
 
-    $lang->about_planet_make_planet = 'マイプラネットを作成しましょう。プラネットの上段に表示される「マイインフォ」を入力して下さい。';
+    $lang->about_planet_make_planet = 'マイプラネット開設のための設定をします。プラネットの上部に表示される「マイインフォ」を入力して下さい。';
     $lang->about_planet_make_planet_info = 'マイプラネットの上段に表示されるマイインフォです。各項目を入力して設定を変更して下さい。';
     $lang->planet_input_personalinfo = '個人情報入力';
     $lang->planet_photo = '写真';
     $lang->planet_myintro = '自己紹介';
 
-    $lang->about_planet_url = '一度設定すると変更が出来ませんので、慎重に決めて下さい。';
+    $lang->about_planet_url = '一度設定すると変更が出来ませんので、慎重に決めて下さい。（英文で始まる、2文字以上の半角英数字）';
     $lang->planet_mytag = '人物タグ';
-    $lang->about_planet_mytag = '自分を表現するタグです。複数のタグは半角「,（コンマ）」で区切って入力して下さい。';
+    $lang->about_planet_mytag = 'あなたを表現するタグです。複数のタグは半角「,（コンマ）」で区切って入力して下さい。';
 
     $lang->about_planet_tag = '複数のタグは「,」で区別されます。';
 
-    $lang->cmd_planet_makeOk_move_myplanet = '確認 : 作成されたマイプラネットに移動します。';
+    $lang->cmd_planet_makeOk_move_myplanet = '確認 （開設されたマイプラネットに移動します。）';
     $lang->cmd_planet_ok_move_myplanet = '確認 : マイプラネットに移動します。';
 
 
@@ -126,8 +126,8 @@
 
     $lang->planet_notice_title = "%sさん、プラネットにようこそ！<br>%sさんの考え、意見、情報、知識などを自由にたくさんの人々と共有出来るプラネットです。簡単な使い方を案内します。";
     $lang->planet_notice_list = array(
-        "「新規投稿」の「開く」ボタンを利用してみて下さい。記事を作成するウィンドウが開きます。",
-        "作成された記事は %sさんのプラネットに訪問する人々に公開されます。",
+        "「新規投稿」の「開く」ボタンを利用してみて下さい。記事を投稿するウィンドウが開きます。",
+        "投稿記事は %sさんのプラネットに訪問する人々に公開されます。",
         "「お気に入り追加」と「関心タグ追加」機能はいつでも%sさんの関心記事を見ることが出来ます。",
         "%sさんの「写真、ネックネーム、タグ」などの情報は現在ページから変更出来ます。",
         "他のプラネットが気になりますか？「リアルタイム人気タグ」または「検索」を利用してみて下さい。",
@@ -135,9 +135,9 @@
     );
     $lang->planet_notice_disable = '今後このメッセージを表示しません。';
 
-    $lang->msg_planet_about_postscript = '追加で書きたいことがありましたら作成して下さい。';
+    $lang->msg_planet_about_postscript = '追加で書きたいことがありましたらここで入力して下さい。';
     $lang->msg_planet_about_tag = 'タグを書いて下さい。(半角コンマ「,」で区別)';
-    $lang->msg_planet_already_added_favorite = '既に登録されたお気に入りです。';
+    $lang->msg_planet_already_added_favorite = '登録済みのお気に入りです。';
     $lang->msg_planet_no_memo = '登録されたメモがありません。';
 
     $lang->msg_planet_rss_enabled = 'RSS配布機能を使用中です。';
@@ -154,9 +154,9 @@
     $lang->planet_total_articles = '全て';
     $lang->planet_wantyou = 'お勧め';
     $lang->planet_best = 'ベスト';
-    $lang->planet_catch = '選んだ記事';
-    $lang->planet_fish = '選ばれた記事';
-    $lang->planet_call = '소환 글';
+    $lang->planet_catch = '選んだ投稿';
+    $lang->planet_fish = '選ばれた投稿';
+    $lang->planet_call = '宛先指定';
     $lang->planet_bigfish = 'ベスト';
     $lang->cmd_send_me2day = 'me2day送信';
 
@@ -174,11 +174,11 @@
 
     $lang->planet_use_mobile = 'SMS連動';
     $lang->about_use_mobile = '携帯SMSにて書き込みが出来ます。（日本国内は未対応）';
-    $lang->planet_use_me2day = 'mw2day連動';
+    $lang->planet_use_me2day = 'me2day連動';
     $lang->about_use_me2day = '書き込みの内容がme2dayへ送信されます。';
 
 
     $lang->msg_search_thisplanet = 'このプラネットで検索';
 
-    $lang->msg_welcome_planet = 'プラネットの開設、有難う御座います。これから宜しくお願します';
+    $lang->msg_welcome_planet = 'プラネットが開設されました。';
 ?>
