@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <widget version="0.2">
 	<title xml:lang="ko">플래닛 최근 글 출력</title>
 	<title xml:lang="en">Recent Document of PlanetXE</title>
@@ -12,7 +12,7 @@
 	<description xml:lang="zh-CN">列出微博主题列表。</description>
 	<description xml:lang="zh-TW">微型部落格主題輸出widget。</description>
 	<description xml:lang="jp">プラネットに登録された書く込みだけ表示するウィジェットです。</description>
-	<version>0.1</version>
+	<version>0.2</version>
 	<date>2008-12-24</date>
 
 	<author email_address="zero@zeroboard.com" link="http://blog.nzeo.com">
