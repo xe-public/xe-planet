@@ -150,7 +150,7 @@
             <name xml:lang="ko">댓글수, 원츄수 표시</name>
             <name xml:lang="en">Display the number of comments and votes</name>
 			<name xml:lang="vi">Bình luận và Bình chọn</name>
-			<name xml:lang="jp">お勧め、ベスト表示</name>
+			<name xml:lang="jp">お勧め数、ベスト数表示</name>
             <options>
                 <value>Y</value>
                 <name xml:lang="ko">출력</name>
