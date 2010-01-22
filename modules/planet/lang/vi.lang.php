@@ -37,6 +37,7 @@
     $lang->use_signup = "Hiển thị đường dẫn đăng kí";
     $lang->about_use_signup = "Nếu chọn, đường dẫn đăng kí sẽ được hiển thị phía trên Planet.";
 
+	
     $lang->cmd_create_planet = "Tạo Planet";
     $lang->create_message = "Lời giới thiệu";
     $lang->about_create_message = "Nhập lời giới thiệu cho người sử dụng tạo Planet.";
@@ -80,9 +81,11 @@
     $lang->cmd_planet_openclose_memo = "Mở/Đóng ghi nhớ";
     $lang->cmd_planet_del_tag = "Xóa Tag";
 
+	
     $lang->cmd_planet_openclose_recommend_search = "Mở/Đóng từ khóa đề nghị.";
     $lang->about_planet_input_search_text = "Tìm kiếm";
 
+	
     $lang->about_planet_make_planet = "Hãy nhập những thông tin cần thiết cho Planet của bạn.";
     $lang->about_planet_make_planet_info = "Nó sẽ hiển thị phía trên Planet của bạn. Bạn hãy tạo theo cách riêng của bạn.";
     $lang->planet_input_personalinfo = "Thông tin cá nhân";
@@ -153,8 +156,9 @@
     $lang->planet_total_articles = "Tất cả";
     $lang->planet_wantyou = "Tăng hạng";
     $lang->planet_best = "Chủ đề HOT";
-    $lang->planet_catch = "Fished others";
-    $lang->planet_fish = "You fished";
+    $lang->planet_catch = "Lừa gạt khác";
+    $lang->planet_fish = "Bạn đã lừa gạt";
+	$lang->planet_call = 'Bài viết lại';
     $lang->planet_bigfish = "Chủ đề HOT";
     $lang->cmd_send_me2day = "Me2Day";
 
@@ -174,6 +178,9 @@
     $lang->about_use_mobile = "Mở chức năng gửi bài qua SMS từ điện thoại.";
     $lang->planet_use_me2day = "Sửa dụng Me2Day";
     $lang->about_use_me2day = "Khi gửi bài viết, bạn có thể gửi lên Me2Day tại (http://me2day.net).";
+	
+	
+	
     $lang->msg_search_thisplanet = "Tìm kiếm trong Planet này.";
 
     $lang->msg_welcome_planet = 'Chúc mừng bạn đã tạo thành công Planet!';
