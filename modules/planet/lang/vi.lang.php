@@ -1,9 +1,9 @@
 <?php
 /*			░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-			░░  * @File   :  common/lang/vi.lang.php                                              ░░
+			░░  * @File   :  module/planet/lang/vi.lang.php                                       ░░
 			░░  * @Author :  zero (zero@nzeo.com)                                                 ░░
-			░░  * @Trans  :  Đào Đức Duy (ducduy.dao.vn@vietxe.net)								  ░░
-			░░	* @Website:  http://vietxe.net													  ░░
+			░░  * @Trans  :  Đào Đức Duy (webmaster@xpressengine.vn)							  ░░
+			░░	* @Website:  http://xpressengine.vn												  ░░
 			░░  * @Brief  :  Vietnamese Language Pack (Only basic words are included here)        ░░
 			░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░	   		*/
 
@@ -173,7 +173,7 @@
     $lang->planet_use_mobile = "Mở SMS";
     $lang->about_use_mobile = "Mở chức năng gửi bài qua SMS từ điện thoại.";
     $lang->planet_use_me2day = "Sửa dụng Me2Day";
-    $lang->about_use_me2day = "khi gửi bài viết, bạn có thể guiwr lên Me2Day tại (http://me2day.net).";
+    $lang->about_use_me2day = "Khi gửi bài viết, bạn có thể gửi lên Me2Day tại (http://me2day.net).";
     $lang->msg_search_thisplanet = "Tìm kiếm trong Planet này.";
 
     $lang->msg_welcome_planet = 'Chúc mừng bạn đã tạo thành công Planet!';
