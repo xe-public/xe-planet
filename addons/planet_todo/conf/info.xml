@@ -4,7 +4,7 @@
 	<title xml:lang="en">Planet TODO</title>
 	<title xml:lang="vi">Planet TODO</title>
     <title xml:lang="zh-CN">微博TODO插件</title>
-    <title xml:lang="zh-TW">微型部落格 TODO 功能</title>
+    <title xml:lang="zh-TW">微網誌 TODO 功能</title>
     <title xml:lang="jp">プラネット（Planet）TODOアドオン</title>
     <description xml:lang="ko">
         플래닛 TODO 애드온
@@ -19,7 +19,7 @@
         XE微博TODO插件。
     </description>
     <description xml:lang="zh-TW">
-        微型部落格 TODO 功能
+        微網誌 TODO 功能
     </description>
     <description xml:lang="jp">
         プラネット（Planet）TODOアドオン

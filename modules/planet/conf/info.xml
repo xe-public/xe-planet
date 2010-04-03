@@ -4,13 +4,13 @@
     <title xml:lang="en">Planet</title>
 	<title xml:lang="vi">Planet</title>
     <title xml:lang="zh-CN">微博</title>
-    <title xml:lang="zh-TW">微型部落格</title>
+    <title xml:lang="zh-TW">微網誌</title>
     <title xml:lang="jp">プラネット</title>
     <description xml:lang="ko">Microblog입니다.</description>
     <description xml:lang="en">Microblog Package.</description>
 	<description xml:lang="vi">Gói tạo MiniBlog.</description>
     <description xml:lang="zh-CN">XE微博(Microblog)模块。</description>
-    <description xml:lang="zh-TW">微型部落格模組。</description>
+    <description xml:lang="zh-TW">微網誌模組。</description>
     <description xml:lang="ko">Microblogパッケージ</description>
     <version>0.1</version>
     <date>2008-09-30</date>
