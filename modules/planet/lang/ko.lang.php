@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   modules/planet/lang/ko.lang.php
-	 * @author sol (sol@ngleader.com)
+	 * @author delphiXE (admin@folderfile.net)
 	 * @brief  플래닛(planet) 모듈의 기본 언어팩
 	 **/
 

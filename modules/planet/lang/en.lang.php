@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   en.lang.php
-	 * @author sol (sol@ngleader.com)
+	 * @author delphiXE (admin@folderfile.net)
 	 * @brief  English language pack for the Planet module
 	 **/
 

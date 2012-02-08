@@ -1,11 +1,10 @@
 <?php
-/*			░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-			░░  * @File   :  module/planet/lang/vi.lang.php									   ░░
-			░░  * @Author :  zero (zero@nzeo.com)												 ░░
-			░░  * @Trans  :  Đào Đức Duy (webmaster@xpressengine.vn)							  ░░
-			░░	* @Website:  http://xpressengine.vn												  ░░
-			░░  * @Brief  :  Vietnamese Language Pack (Only basic words are included here)		░░
-			░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░	   		*/
+	/**
+	 * @file   tr.lang.php
+	 * @author delphiXE (admin@folderfile.net)
+	 * @Trans  :  Đào Đức Duy (webmaster@xpressengine.vn)
+	 * @brief  Vietnamese language pack for the Planet module
+	 **/
 
 	$lang->planet = "Planet";
 	$lang->planet_title = "Tiêu đề";

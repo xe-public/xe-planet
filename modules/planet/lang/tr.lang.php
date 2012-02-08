@@ -1,8 +1,8 @@
 <?php
 	/**
 	 * @file   tr.lang.php
-	 * @author sol (sol@ngleader.com)
-	 * @brief  English language pack for the Planet module
+	 * @author delphiXE (admin@folderfile.net)
+	 * @brief  Turkish language pack for the Planet module
 	 **/
 
 	$lang->planet = "Planet";
