@@ -140,21 +140,21 @@ function $Agent() {
 $Agent.prototype.navigator = function() {
 	var info = new Object;
 	var ver  = -1;
-	var u    = navigator.userAgent;
-	var v    = navigator.vendor || "";
+	var u	= navigator.userAgent;
+	var v	= navigator.vendor || "";
 	
 	function f(s,h){ return ((h||"").indexOf(s) > -1) };
 
-	info.opera     = (typeof window.opera != "undefined") || f("Opera",u);
-	info.ie        = !info.opera && f("MSIE",u);
-	info.chrome    = f("Chrome",u);
-	info.safari    = !info.chrome && f("Apple",v);
+	info.opera	 = (typeof window.opera != "undefined") || f("Opera",u);
+	info.ie		= !info.opera && f("MSIE",u);
+	info.chrome	= f("Chrome",u);
+	info.safari	= !info.chrome && f("Apple",v);
 	info.mozilla   = f("Gecko",u) && !info.safari && !info.chrome;
 	info.firefox   = f("Firefox",u);
-	info.camino    = f("Camino",v);
+	info.camino	= f("Camino",v);
 	info.netscape  = f("Netscape",u);
 	info.omniweb   = f("OmniWeb",u);
-	info.icab      = f("iCab",v);
+	info.icab	  = f("iCab",v);
 	info.konqueror = f("KDE",v);
 
 	try {
@@ -197,12 +197,12 @@ $Agent.prototype.navigator = function() {
  */
 $Agent.prototype.os = function() {
 	var info = new Object;
-	var u    = navigator.userAgent;
-	var p    = navigator.platform;
-	var f    = function(s,h){ return (h.indexOf(s) > -1) };
+	var u	= navigator.userAgent;
+	var p	= navigator.platform;
+	var f	= function(s,h){ return (h.indexOf(s) > -1) };
 
-	info.win     = f("Win",p);
-	info.mac     = f("Mac",p);
+	info.win	 = f("Win",p);
+	info.mac	 = f("Mac",p);
 	info.linux   = f("Linux",p);
 	info.win2000 = info.win && (f("NT 5.0",p) || f("2000",p));
 	info.winxp   = info.win && (f("NT 5.1",p) || f("Win32",p));
@@ -223,9 +223,9 @@ $Agent.prototype.os = function() {
  */
 $Agent.prototype.flash = function() {
 	var info = new Object;
-	var p    = navigator.plugins;
-	var m    = navigator.mimeTypes;
-	var f    = null;
+	var p	= navigator.plugins;
+	var m	= navigator.mimeTypes;
+	var f	= null;
 
 	info.installed = false;
 	info.version   = -1;
@@ -271,8 +271,8 @@ $Agent.prototype.flash = function() {
  */
 $Agent.prototype.silverlight = function() {
 	var info = new Object;
-	var p    = navigator.plugins;
-	var s    = null;
+	var p	= navigator.plugins;
+	var s	= null;
 
 	info.installed = false;
 	info.version   = -1;
@@ -424,8 +424,8 @@ $A.prototype.unshift = function(element1/*, ...*/) {
  * @import core.$A[Break, Continue]
  */
 $A.prototype.forEach = function(callback, thisObject) {
-	var arr         = this._array;
-	var errBreak    = this.constructor.Break;
+	var arr		 = this._array;
+	var errBreak	= this.constructor.Break;
 	var errContinue = this.constructor.Continue;
 	
 	function f(v,i,a) {
@@ -463,8 +463,8 @@ $A.prototype.forEach = function(callback, thisObject) {
  * @id core.$A.map
  */
 $A.prototype.map = function(callback, thisObject) {
-	var arr         = this._array;
-	var errBreak    = this.constructor.Break;
+	var arr		 = this._array;
+	var errBreak	= this.constructor.Break;
 	var errContinue = this.constructor.Continue;
 	
 	function f(v,i,a) {
@@ -659,7 +659,7 @@ function $Ajax(url, option) {
 		}
 	}
 
-	var loc    = location.toString();
+	var loc	= location.toString();
 	var domain = '';
 	try { domain = loc.match(/^https?:\/\/([a-z0-9_\-\.]+)/i)[1]; } catch(e) {}
 
@@ -928,12 +928,12 @@ $Ajax.JSONPRequest = $Class({
 		this._url = url;
 	},
 	send  : function(data) {
-		var t    = this;
+		var t	= this;
 		var info = this._getCallbackInfo();
 		var head = document.getElementsByTagName("head")[0];
 		
 		this._script = $("<script>");
-		this._script.type    = "text/javascript";
+		this._script.type	= "text/javascript";
 		this._script.charset = this.charset;
 		
 		if (head) {
@@ -972,14 +972,14 @@ $Ajax.SWFRequest = $Class({
 	open : function(method, url) {
 		var re  = /https?:\/\/([a-z0-9_\-\.]+)/i;
 		
-		this._url    = url;
+		this._url	= url;
 		this._method = method;
 	},
 	send : function(data) {
 		this.responseXML  = false;
 		this.responseText = "";
 		
-		var t    = this;
+		var t	= this;
 		var dat  = {};
 		var info = this._getCallbackInfo();
 		var swf  = window.document[$Ajax.SWFRequest._tmpId];
@@ -1082,7 +1082,7 @@ $Ajax.FrameRequest = $Class({
 		var dom = document.location.toString().match(re);
 		
 		this._method = method;
-		this._url    = url;
+		this._url	= url;
 		this._remote = String(url).match(/(https?:\/\/[a-z0-9_\-\.]+)/i)[1];
 		this._frame = null;
 		this._domain = (dom[1] != document.domain)?document.domain:"";
@@ -1091,10 +1091,10 @@ $Ajax.FrameRequest = $Class({
 		this.responseXML  = "";
 		this.responseText = "";
 	
-		var t      = this;
-		var re     = /https?:\/\/([a-z0-9_\-\.]+)/i;
+		var t	  = this;
+		var re	 = /https?:\/\/([a-z0-9_\-\.]+)/i;
 		var info   = this._getCallbackInfo();
-		var url    = this._remote+"/ajax_remote_callback.html?method="+this._method;
+		var url	= this._remote+"/ajax_remote_callback.html?method="+this._method;
 		var header = new Array;
 	
 		window.__jindo2_callback[info.id] = function(id, data, header){
@@ -1949,7 +1949,7 @@ $Element.prototype.css = function(sName, sValue) {
 		var v, type;
 
 		for(var k in sName) {
-			v    = sName[k];
+			v	= sName[k];
 			type = (typeof v);
 			if (type != "string" && type != "number") continue;
 			if (k == "cssFloat" && navigator.userAgent.indexOf("MSIE") > -1) k = "styleFloat";
@@ -2687,8 +2687,8 @@ $Element.prototype.ellipsis = function(stringTail) {
 	var txt   = this.text();
 	var len   = txt.length;
 	var cur_h = this.height();
-	var i     = 0;
-	var h     = this.text('A').height();
+	var i	 = 0;
+	var h	 = this.text('A').height();
 
 	if (cur_h < h * 1.5) return this.text(txt);
 
@@ -2971,7 +2971,7 @@ function $Event(e) {
  * @id core.$Event.mouse
  */
 $Event.prototype.mouse = function() {
-	var e    = this._event;
+	var e	= this._event;
 	var delta = 0;
 	var left  = (e.which&&e.button==0)||!!(e.button&1);
 	var mid   = (e.which&&e.button==1)||!!(e.button&4);
@@ -2996,18 +2996,18 @@ $Event.prototype.mouse = function() {
  * @id core.$Event.key
  */
 $Event.prototype.key = function() {
-	var e     = this._event;
-	var k     = e.keyCode;
+	var e	 = this._event;
+	var k	 = e.keyCode;
 
 	return {
 		keyCode : k,
-		alt     : e.altKey,
-		ctrl    : e.ctrlKey,
-		meta    : e.metaKey,
+		alt	 : e.altKey,
+		ctrl	: e.ctrlKey,
+		meta	: e.metaKey,
 		shift   : e.shiftKey,
-		up      : (k == 38),
-		down    : (k == 40),
-		left    : (k == 37),
+		up	  : (k == 38),
+		down	: (k == 40),
+		left	: (k == 37),
 		right   : (k == 39),
 		enter   : (k == 13)
 	}
@@ -3577,18 +3577,18 @@ $Form.prototype.reset = function() {
  * @id core.$Template
  */
 function $Template(str) {
-    var obj = null;
-    var cl  = arguments.callee;
+	var obj = null;
+	var cl  = arguments.callee;
 
-    if (str instanceof cl) return str;
-    if (!(this instanceof cl)) return new cl(str);
+	if (str instanceof cl) return str;
+	if (!(this instanceof cl)) return new cl(str);
 
-    if(typeof str == "undefined") str = "";
-    else if((obj=$(str)) && obj.tagName.toUpperCase() == "TEXTAREA") {
-            str = obj.value.replace(/^\s+|\s+$/g,"");
-    }
+	if(typeof str == "undefined") str = "";
+	else if((obj=$(str)) && obj.tagName.toUpperCase() == "TEXTAREA") {
+			str = obj.value.replace(/^\s+|\s+$/g,"");
+	}
 
-    this._str = str+"";
+	this._str = str+"";
 }
 $Template.splitter = /(?!\\)[\{\}]/g;
 $Template.pattern  = /^(?:if (.+)|elseif (.+)|for (?:(.+)\:)?(.+) in (.+)|(else)|\/(if|for)|=(.+))$/;
@@ -3599,54 +3599,54 @@ $Template.pattern  = /^(?:if (.+)|elseif (.+)|for (?:(.+)\:)?(.+) in (.+)|(else)
  * @param {Object} data 변수 및 함수 데이터
  */
 $Template.prototype.process = function(data) {
-    var tpl = this._str.split($Template.splitter), i = tpl.length;
-    var map = {'"':'\\"','\\':'\\\\','\n':'\\n','\r':'\\r','\t':'\\t','\f':'\\f'};
-    var reg = [/([a-zA-Z_][\w\.]*)/g, /[\n\r\t\f"\\]/g, /^\s+/, /\s+$/];
-    var cb  = ["d.$1", function(m){return map[m]||m},"",""];
-    var stm = [];
+	var tpl = this._str.split($Template.splitter), i = tpl.length;
+	var map = {'"':'\\"','\\':'\\\\','\n':'\\n','\r':'\\r','\t':'\\t','\f':'\\f'};
+	var reg = [/([a-zA-Z_][\w\.]*)/g, /[\n\r\t\f"\\]/g, /^\s+/, /\s+$/];
+	var cb  = ["d.$1", function(m){return map[m]||m},"",""];
+	var stm = [];
 
-    // no pattern
-    if(i<2) return tpl;
+	// no pattern
+	if(i<2) return tpl;
 
-    while(i--) {
-        if(i%2) {
-            tpl[i] = tpl[i].replace($Template.pattern, function(){
-                var m = arguments;
+	while(i--) {
+		if(i%2) {
+			tpl[i] = tpl[i].replace($Template.pattern, function(){
+				var m = arguments;
 
-                // variables
-                if(m[8]) return 's[s.length]=d.'+m[8]+';';
+				// variables
+				if(m[8]) return 's[s.length]=d.'+m[8]+';';
 
-                // if
-                if(m[1]) {
-                    return 'if('+m[1].replace(reg[0],cb[0])+'){';
-                }
+				// if
+				if(m[1]) {
+					return 'if('+m[1].replace(reg[0],cb[0])+'){';
+				}
 
-                // else if
-                if(m[2]) return '}else if('+m[2].replace(reg[0],cb[0])+'){';
+				// else if
+				if(m[2]) return '}else if('+m[2].replace(reg[0],cb[0])+'){';
 
-                // for loop
-                if(m[5]) {
-                    return 'n=0;t=d.'+m[5]+';p=(t instanceof Array);for(var x in t){if((p&&isNaN(parseInt(x)))||(!p&&!t.propertyIsEnumerable(x)))continue;d.'+m[4]+'=t[x];'+(m[3]?'d.'+m[3]+'=x;':'')+'n++;';
-                }
+				// for loop
+				if(m[5]) {
+					return 'n=0;t=d.'+m[5]+';p=(t instanceof Array);for(var x in t){if((p&&isNaN(parseInt(x)))||(!p&&!t.propertyIsEnumerable(x)))continue;d.'+m[4]+'=t[x];'+(m[3]?'d.'+m[3]+'=x;':'')+'n++;';
+				}
 
-                // else
-                if(m[6]) return '}else{';
+				// else
+				if(m[6]) return '}else{';
 
-                // end if, end for
-                if(m[7]) {
-                    return '};';
-                }
+				// end if, end for
+				if(m[7]) {
+					return '};';
+				}
 
-                return m[0];
-            });
-        } else if(tpl[i]){
-            tpl[i] = 's[s.length]="'+tpl[i].replace(reg[1],cb[1])+'";';
-        }
-    }
+				return m[0];
+			});
+		} else if(tpl[i]){
+			tpl[i] = 's[s.length]="'+tpl[i].replace(reg[1],cb[1])+'";';
+		}
+	}
 
-    tpl = (new Function("d",'var s=[];'+tpl.join('')+'return s.join("")'))(data);
+	tpl = (new Function("d",'var s=[];'+tpl.join('')+'return s.join("")'))(data);
 
-    return tpl;
+	return tpl;
 };
 /**
  * $Cookie 객체를 반환한다.
@@ -3679,9 +3679,9 @@ function $Date(src) {
 $Date.names = {
 	month   : ["January","Febrary","March","April","May","June","July","August","September","October","Novermber","December"],
 	s_month : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
-	day     : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+	day	 : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
 	s_day   : ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
-	ampm    : ["AM", "PM"]
+	ampm	: ["AM", "PM"]
 };
 
 /**

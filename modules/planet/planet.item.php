@@ -1,120 +1,120 @@
 <?php
 
-    require_once(_XE_PATH_.'modules/document/document.item.php');
+	require_once(_XE_PATH_.'modules/document/document.item.php');
 
-    class planetItem extends documentItem {
+	class planetItem extends documentItem {
 
-        function planetItem($document_srl = 0) {
-            parent::documentItem($document_srl);
-        }
+		function planetItem($document_srl = 0) {
+			parent::documentItem($document_srl);
+		}
 
-        function setPlanet($document_srl) {
-            $this->document_srl = $document_srl;
-            $this->_loadFromDB();
-        }
+		function setPlanet($document_srl) {
+			$this->document_srl = $document_srl;
+			$this->_loadFromDB();
+		}
 
-        function _loadFromDB() {
-            if(!$this->document_srl) return;
-            parent::_loadFromDB();
-        }
+		function _loadFromDB() {
+			if(!$this->document_srl) return;
+			parent::_loadFromDB();
+		}
 
-        function setAttribute($attribute) {
-            parent::setAttribute($attribute);
-        }
-
-
-        function getPlanetPhotoSrc($width=96,$height=96) {
-            $oPlanetModel = &getModel('planet');
-            return $oPlanetModel->getPlanetPhotoSrc($this->get('module_srl'), $width, $height);
-        }
-
-        function getPlanetMid() {
-            return $this->get('mid');
-        }
-
-        function getPlanetTitle() {
-            return $this->get('planet_title');
-        }
-
-        function getUserID() {
-            return parent::getUserID();
-        }
-
-        function getUserName() {
-            return parent::getUserName();
-        }
-
-        function getNickName() {
-            return parent::getNickName();
-        }
+		function setAttribute($attribute) {
+			parent::setAttribute($attribute);
+		}
 
 
-        function getPostScript() {
-            return $this->getExtraValue(20);
-        }
+		function getPlanetPhotoSrc($width=96,$height=96) {
+			$oPlanetModel = &getModel('planet');
+			return $oPlanetModel->getPlanetPhotoSrc($this->get('module_srl'), $width, $height);
+		}
 
-        function getContent($add_popup_menu = false, $add_content_info = true, $resource_realpath = false, $add_xe_content_class = true) {
-            if(!$this->document_srl) return;
-            return parent::getContent($add_popup_menu, $add_content_info, $resource_realpath, $add_xe_content_class);
-        }
+		function getPlanetMid() {
+			return $this->get('mid');
+		}
 
-        function getArrTags() {
-            return $this->get('tag_list');
-        }
+		function getPlanetTitle() {
+			return $this->get('planet_title');
+		}
 
-        function getTextTags() {
-            return $this->get('tags');
-        }
+		function getUserID() {
+			return parent::getUserID();
+		}
 
-        function getRegdate(){
-            return $this->get('regdate');
-        }
+		function getUserName() {
+			return parent::getUserName();
+		}
 
-        function getVotedCount(){
-            return $this->get('voted_count');
+		function getNickName() {
+			return parent::getNickName();
+		}
 
-        }
 
-        function PopularTags($list_count = 100, $shuffle = false) {
-            if(!$this->isHome()) $args->mid = $this->getMid();
-            $args->list_count = $list_count;
+		function getPostScript() {
+			return $this->getExtraValue(20);
+		}
 
-            // 24시간 이내의 태그중에서 인기 태그를 추출
-            $args->date = date("YmdHis", time()-60*60*24);
+		function getContent($add_popup_menu = false, $add_content_info = true, $resource_realpath = false, $add_xe_content_class = true) {
+			if(!$this->document_srl) return;
+			return parent::getContent($add_popup_menu, $add_content_info, $resource_realpath, $add_xe_content_class);
+		}
 
-            $output = executeQueryArray('planet.getPlanetPopularTags',$args);
-            if(!$output->toBool() || !$output->data) return array();
+		function getArrTags() {
+			return $this->get('tag_list');
+		}
 
-            $tags = array();
-            $max = 0;
-            $min = 99999999;
-            foreach($output->data as $key => $val) {
-                $tag = $val->tag;
-                $count = $val->count;
-                if($max < $count) $max = $count;
-                if($min > $count) $min = $count;
-                $tags[] = $val;
-            }
+		function getTextTags() {
+			return $this->get('tags');
+		}
 
-            if($shuffle) {
-                $mid2 = $min+(int)(($max-$min)/2);
-                $mid1 = $mid2+(int)(($max-$mid2)/2);
-                $mid3 = $min+(int)(($mid2-$min)/2);
+		function getRegdate(){
+			return $this->get('regdate');
+		}
 
-                $output = null;
+		function getVotedCount(){
+			return $this->get('voted_count');
 
-                foreach($tags as $key => $item) {
-                    if($item->count > $mid1) $rank = 1;
-                    elseif($item->count > $mid2) $rank = 2;
-                    elseif($item->count > $mid3) $rank = 3;
-                    else $rank= 4;
+		}
 
-                    $tags[$key]->rank = $rank;
-                }
-                shuffle($tags);
-            }
+		function PopularTags($list_count = 100, $shuffle = false) {
+			if(!$this->isHome()) $args->mid = $this->getMid();
+			$args->list_count = $list_count;
 
-            return $tags;
-        }
-    }
+			// 24시간 이내의 태그중에서 인기 태그를 추출
+			$args->date = date("YmdHis", time()-60*60*24);
+
+			$output = executeQueryArray('planet.getPlanetPopularTags',$args);
+			if(!$output->toBool() || !$output->data) return array();
+
+			$tags = array();
+			$max = 0;
+			$min = 99999999;
+			foreach($output->data as $key => $val) {
+				$tag = $val->tag;
+				$count = $val->count;
+				if($max < $count) $max = $count;
+				if($min > $count) $min = $count;
+				$tags[] = $val;
+			}
+
+			if($shuffle) {
+				$mid2 = $min+(int)(($max-$min)/2);
+				$mid1 = $mid2+(int)(($max-$mid2)/2);
+				$mid3 = $min+(int)(($mid2-$min)/2);
+
+				$output = null;
+
+				foreach($tags as $key => $item) {
+					if($item->count > $mid1) $rank = 1;
+					elseif($item->count > $mid2) $rank = 2;
+					elseif($item->count > $mid3) $rank = 3;
+					else $rank= 4;
+
+					$tags[$key]->rank = $rank;
+				}
+				shuffle($tags);
+			}
+
+			return $tags;
+		}
+	}
 ?>
