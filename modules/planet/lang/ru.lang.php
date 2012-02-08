@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   ru.lang.php
-	 * @author delphiXE (admin@folderfile.net)
+	 * @author delphiXE (admin@folderfile.net) / sol (sol@ngleader.com)
 	 * @brief  Russian language pack for the Planet module
 	 **/
 

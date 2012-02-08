@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   modules/planet/lang/zh-TW.lang.php
-	 * @author delphiXE (admin@folderfile.net) 翻譯:royallin
+	 * @author delphiXE (admin@folderfile.net) / sol (sol@ngleader.com) 翻譯:royallin
 	 * @brief  微網誌(planet)模組正體中文語言
 	 **/
 

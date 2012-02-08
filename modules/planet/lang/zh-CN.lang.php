@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   zh-CN.lang.php
-	 * @author delphiXE (admin@folderfile.net)
+	 * @author delphiXE (admin@folderfile.net) / sol (sol@ngleader.com)
 	 * @brief  微博(planet)模块语言包
 	 **/
 
