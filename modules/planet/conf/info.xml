@@ -41,6 +41,7 @@
 		<name xml:lang="zh-CN">zero</name>
 		<name xml:lang="zh-TW">zero</name>
 		<name xml:lang="tr">zero</name>
+	</author>
 	<author email_address="admin@folderfile.net" link="http://folderfile.net">
 		<name xml:lang="ko">delphiXE2</name>
 		<name xml:lang="en">delphiXE2</name>
@@ -51,6 +52,5 @@
 		<name xml:lang="zh-CN">delphiXE2</name>
 		<name xml:lang="zh-TW">delphiXE2</name>
 		<name xml:lang="tr">delphiXE2</name>
-	</author>
 	</author>
 </module>
