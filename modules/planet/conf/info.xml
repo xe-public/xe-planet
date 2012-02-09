@@ -19,7 +19,28 @@
 	<description xml:lang="zh-TW">Microblog Module.</description>
 	<description xml:lang="tr">Microblog Module.</description>
 	<version>0.1</version>
-	<date>2012-02-09</date>
+	<date>2008-09-30</date>
+	<author email_address="sol@ngleader.com" link="http://folderfile.net">
+		<name xml:lang="ko">sol</name>
+		<name xml:lang="en">sol</name>
+		<name xml:lang="vi">sol</name>
+		<name xml:lang="es">sol</name>
+		<name xml:lang="jp">sol</name>
+		<name xml:lang="ru">sol</name>
+		<name xml:lang="zh-CN">sol</name>
+		<name xml:lang="zh-TW">sol</name>
+		<name xml:lang="tr">sol</name>
+	</author>
+	<author email_address="zero@zeroboard.com">
+		<name xml:lang="ko">zero</name>
+		<name xml:lang="en">zero</name>
+		<name xml:lang="vi">zero</name>
+		<name xml:lang="es">zero</name>
+		<name xml:lang="jp">zero</name>
+		<name xml:lang="ru">zero</name>
+		<name xml:lang="zh-CN">zero</name>
+		<name xml:lang="zh-TW">zero</name>
+		<name xml:lang="tr">zero</name>
 	<author email_address="admin@folderfile.net" link="http://folderfile.net">
 		<name xml:lang="ko">delphiXE2</name>
 		<name xml:lang="en">delphiXE2</name>
@@ -30,5 +51,6 @@
 		<name xml:lang="zh-CN">delphiXE2</name>
 		<name xml:lang="zh-TW">delphiXE2</name>
 		<name xml:lang="tr">delphiXE2</name>
+	</author>
 	</author>
 </module>

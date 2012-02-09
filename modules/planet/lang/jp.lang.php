@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   modules/planet/lang/jp.lang.php
-	 * @author delphiXE (admin@folderfile.net) / sol (sol@ngleader.com) 翻訳：nmind(nmindplus@gmail.com)、ミニミ
+	 * @author sol (sol@ngleader.com) / delphiXE (admin@folderfile.net) 翻訳：nmind(nmindplus@gmail.com)、ミニミ
 	 * @brief  プラネット(planet)モジュールの日本語パック
 	 **/
 

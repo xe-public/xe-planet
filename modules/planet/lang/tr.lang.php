@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   tr.lang.php
-	 * @author delphiXE (admin@folderfile.net) / sol (sol@ngleader.com)
+	 * @author sol (sol@ngleader.com) / delphiXE (admin@folderfile.net)
 	 * @brief  Turkish language pack for the Planet module
 	 **/
 

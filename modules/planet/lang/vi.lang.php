@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @file   tr.lang.php
-	 * @author delphiXE (admin@folderfile.net) / zero (zero@nzeo.com)
+	 * @author zero (zero@nzeo.com) / delphiXE (admin@folderfile.net)
 	 * @Trans  :  Đào Đức Duy (webmaster@xpressengine.vn)
 	 * @brief  Vietnamese language pack for the Planet module
 	 **/
