@@ -1,3 +1,0 @@
-#labels Featured
-Changes with 0.1 : 08 Feb 2012<br>
- - Feature : Old Release.
