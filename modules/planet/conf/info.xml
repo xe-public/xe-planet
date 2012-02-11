@@ -18,8 +18,8 @@
 	<description xml:lang="zh-CN">Microblog Module.</description>
 	<description xml:lang="zh-TW">Microblog Module.</description>
 	<description xml:lang="tr">Microblog Module.</description>
-	<version>0.1</version>
-	<date>2008-09-30</date>
+	<version>0.1.1</version>
+	<date>2012-02-12</date>
 	<author email_address="sol@ngleader.com">
 		<name xml:lang="ko">sol</name>
 		<name xml:lang="en">sol</name>
