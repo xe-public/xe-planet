@@ -11,13 +11,6 @@
 		</td>
 	</tr>
 	<tr class="row2">
-		<th scope="row"><div>{$lang->is_default}</div></th>
-		<td colspan="3">
-			<input type="checkbox" name="is_default" value="Y" <!--@if($module_info->is_default=='Y')-->checked="checked"<!--@end--> id="fld_for_default"  class="checkbox" />
-			<label for="fld_for_default">{$lang->about_default}</label>
-		</td>
-	</tr>
-	<tr class="row2">
 		<th scope="row"><div>{$lang->browser_title}</div></th>
 		<td colspan="3">
 			<input type="text" name="browser_title" value="{htmlspecialchars($module_info->browser_title)}"  class="inputTypeText w400" />

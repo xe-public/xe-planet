@@ -8,7 +8,6 @@
 		<param name="planet_mid" target="mid" />
 		<param name="browser_title" target="browser_title" />
 		<param name="create_message" target="create_message" />
-		<param name="is_default" target="is_default" />
 		<param name="use_signup" target="use_signup" />
 		<param name="planet_default_skin" target="planet_default_skin" />
 		<param name="layout_srl" target="layout_srl" />
