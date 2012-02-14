@@ -40,6 +40,7 @@
 		<permission action="dispPlanetAdminSkinInfo" target="manager" />
 		<permission action="dispPlanetAdminDelete" target="manager" />
 		<permission action="dispPlanetAdminGrantInfo" target="manager" />
+		<permission action="dispPlanetAdminAdditionalSetup" target="manager" />
 
 		<permission action="procPlanetAdminInsertConfig" target="manager" />
 		<permission action="procPlanetAdminInsert" target="manager" />
@@ -101,6 +102,7 @@
 		<action name="dispPlanetAdminDelete" type="view" standalone="true" />
 		<action name="dispPlanetAdminGrantInfo" type="view" standalone="true" />
 		<action name="dispPlanetAdminSkinInfo" type="view" standalone="true" />
+		<action name="dispPlanetAdminAdditionalSetup" type="view" standalone="true" menu_name="planet"  />
 
 		<action name="procPlanetAdminInsertConfig" type="controller" standalone="true" />
 		<action name="procPlanetAdminInsert" type="controller" standalone="true" />

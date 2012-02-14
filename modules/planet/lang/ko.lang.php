@@ -13,7 +13,7 @@
 	$lang->planet_whos_favorite = "%s 님의 즐겨찾기";
 	$lang->planet_whos_favorite_list = "'%s'님께서 즐겨찾는 플래닛";
 	$lang->planet_favorite = "즐겨찾기";
-
+	$lang->cmd_additional_setup = "추가 설정";
 	$lang->planet_welcome = '축하합니다';
 
 	$lang->planet_reply_content = '플래닛 댓글 내용';

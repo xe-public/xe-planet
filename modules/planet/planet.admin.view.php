@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @class  planetAdminView
-	 * @author sol (sol@ngleader.com)
+	 * @author sol (sol@ngleader.com) / Geunhong Kim (admin@folderfile.net)
 	 * @brief  planet 모듈의 admin view class
 	 **/
 
@@ -93,6 +93,18 @@
 			$this->setTemplateFile('skin_info');
 		}
 
+		/**
+		 * @brief additional configuration support
+		 **/
+		function dispPlanetAdminAdditionalSetup() {
+			$output = ModuleHandler::triggerCall('module.dispAdditionSetup', 'before', $content);
+			$output = ModuleHandler::triggerCall('module.dispAdditionSetup', 'after', $content);
+			Context::set('setup_content', $content);
+		
+			// 템플릿  파일 지정
+			$this->setTemplateFile('additional_setup');
+		}
+		
 		/**
 		 * @brief 권한 목록 출력
 		 **/
