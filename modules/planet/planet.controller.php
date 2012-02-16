@@ -207,6 +207,8 @@
 		}
 
 		function insertContent($obj,$manual_inserted=false){
+			// 댓글 차단 표시가 없으면, 댓글 허용.
+			if(!$obj->commentStatus) $obj->commentStatus = 'ALLOW';
 
 			// 게시글 등록
 			$obj->content = str_replace(array('<','>'),array('&lt;','&gt;'),$obj->content);
@@ -700,6 +702,7 @@
 			$oDocumentModel = &getModel('document');
 			$oDocument = $oDocumentModel->getDocument($obj->document_srl);
 			if(!$oDocument->isExists()) return new Object(-1,'msg_not_permitted');
+			if($oDocument->isLocked()) return new Object(-1,'test');
 
 			// comment 모듈의 model 객체 생성
 			$oCommentModel = &getModel('comment');
