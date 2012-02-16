@@ -105,6 +105,8 @@
 
 		function getUserName() {
 			if(!$this->isExists()) return;
+			// 사용자 이름이 없는 경우 닉네임 반환
+			if($this->get('member_srl') == $this->get('user_name')) return $this->get('nick_name'); 
 			return $this->get('user_name'); 
 		}
 
