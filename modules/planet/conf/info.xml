@@ -12,42 +12,18 @@
 	<title xml:lang="tr">Planet</title>
 	<title xml:lang="vi">Planet</title>
 	<title xml:lang="mn">Planet</title>
-	<description xml:lang="en">
-	Microblog Module.
-	</description>
-	<description xml:lang="ko">
-	마이크로블로그를 운영할 수 있는 모듈입니다.
-	</description>
-	<description xml:lang="jp">
-	Microblog Module.
-	</description>
-	<description xml:lang="zh-CN">
-	Microblog Module.
-	</description>
-	<description xml:lang="zh-TW">
-	Microblog Module.
-	</description>
-	<description xml:lang="fr">
-	Microblog Module.
-	</description>
-	<description xml:lang="de">
-	Microblog Module.
-	</description>
-	<description xml:lang="ru">
-	Microblog Module.
-	</description>
-	<description xml:lang="es">
-	Microblog Module.
-	</description>
-	<description xml:lang="tr">
-	Microblog Module.
-	</description>
-	<description xml:lang="vi">
-	Gói tạo MiniBlog.
-	</description>
-	<description xml:lang="mn">
-	Microblog Module.
-	</description>
+	<description xml:lang="en">Microblog Module.</description>
+	<description xml:lang="ko">마이크로블로그를 운영할 수 있는 모듈입니다.</description>
+	<description xml:lang="jp">Microblog Module.</description>
+	<description xml:lang="zh-CN">Microblog Module.</description>
+	<description xml:lang="zh-TW">Microblog Module.</description>
+	<description xml:lang="fr">Microblog Module.</description>
+	<description xml:lang="de">Microblog Module.</description>
+	<description xml:lang="ru">Microblog Module.</description>
+	<description xml:lang="es">Microblog Module.</description>
+	<description xml:lang="tr">Microblog Module.</description>
+	<description xml:lang="vi">Gói tạo MiniBlog.</description>
+	<description xml:lang="mn">Microblog Module.</description>
 	<version>0.1.1</version>
 	<date>2012-02-12</date>
 	<author email_address="sol@ngleader.com">
@@ -91,5 +67,19 @@
 		<name xml:lang="tr">Geunhong Kim</name>
 		<name xml:lang="vi">Geunhong Kim</name>
 		<name xml:lang="mn">Geunhong Kim</name>
+	</author>
+	<author email_address="misol.kr@gmail.com" link="http://twitter.com/misol221">
+		<name xml:lang="ko">misol(김민수)</name>
+		<name xml:lang="en">misol</name>
+		<name xml:lang="jp">misol</name>
+		<name xml:lang="zh-CN">misol</name>
+		<name xml:lang="zh-TW">misol</name>
+		<name xml:lang="fr">misol</name>
+		<name xml:lang="de">misol</name>
+		<name xml:lang="ru">misol</name>
+		<name xml:lang="es">misol</name>
+		<name xml:lang="tr">misol</name>
+		<name xml:lang="vi">misol</name>
+		<name xml:lang="mn">misol</name>
 	</author>
 </module>
