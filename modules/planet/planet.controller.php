@@ -211,37 +211,9 @@
 			if(!$obj->commentStatus) $obj->commentStatus = 'ALLOW';
 
 			// 게시글 등록
-			$obj->content = str_replace(array('<','>'),array('&lt;','&gt;'),$obj->content);
-			$obj->content = str_replace('...', '…', $obj->content);
-			$obj->content = str_replace('--', '—', $obj->content);
-			$obj->content = preg_replace('/"([^"]+)":([0-9]+)/i', '<a href="'.Context::getRequestUri().'$2">$1</a>', $obj->content);
-
-			$obj->content = preg_replace('/"([^"]+)":(http|ftp|https|mms)([^ ]+)/is','<a href="$2$3" onclick="window.open(this.href);return false;">$1</a>$4', $obj->content);
-
-			//$obj->content = preg_replace_callback('/@([^ ]+)( |$)/is', array($this,'_replace_nickname'), $obj->content);
-			preg_match_all('/@([^\"@ ]+)( |$)/is',$obj->content,$match);
-
-			$calling = array();
-			if($match[1] && is_array($match[1])){
-				$oMemberModel = &getModel('member');
-				$oPlanetModel = &getModel('planet');
-
-				foreach($match[1] as $k => $m){
-					$member_srl = $oMemberModel->getMemberSrlByNickName($m);
-					if($member_srl){
-						$oPlanet = $oPlanetModel->getMemberPlanet($member_srl);
-						if($oPlanet && $oPlanet->isExists()){
-							$str = sprintf('<a href="%s">%s</a> ',getFullUrl('','mid',$oPlanet->getPlanetMid()),'@'.$m);
-							$obj->content = preg_replace('/@'.$m.'( |$)/is',$str,$obj->content);
-
-							$logged_info = Context::get('logged_info');
-							if($logged_info->member_srl != $member_srl){
-								$calling[] = $oPlanet->getPlanetSrl();
-							}
-						}
-					}
-				}
-			}
+			$content = $this->grammarConvert($obj->content);
+			$obj->content = $content->content;
+			$calling = $content->calling;
 
 			$oDocumentController = &getController('document');
 			$output = $oDocumentController->insertDocument($obj,$manual_inserted);
@@ -673,30 +645,10 @@
 			$obj->document_srl = $req->document_srl;
 			$obj->content = $req->planet_reply_content;
 
-			preg_match_all('/@([^\"@ ]+)( |$)/is',$obj->content,$match);
-
-			$calling = array();
-			if($match[1] && is_array($match[1])){
-				$oMemberModel = &getModel('member');
-				$oPlanetModel = &getModel('planet');
-
-				foreach($match[1] as $k => $m){
-					$member_srl = $oMemberModel->getMemberSrlByNickName($m);
-					if($member_srl){
-						$oPlanet = $oPlanetModel->getMemberPlanet($member_srl);
-						if($oPlanet && $oPlanet->isExists()){
-							$str = sprintf('<a href="%s">%s</a> ',getFullUrl('','mid',$oPlanet->getPlanetMid()),'@'.$m);
-							$obj->content = preg_replace('/@'.$m.'( |$)/is',$str,$obj->content);
-
-							$logged_info = Context::get('logged_info');
-							if($logged_info->member_srl != $member_srl){
-								$calling[] = $oPlanet->getPlanetSrl();
-							}
-						}
-					}
-				}
-			}
-
+			// 댓글 등록
+			$content = $this->grammarConvert($obj->content);
+			$obj->content = $content->content;
+			$calling = $content->calling;
 
 			// 원글이 존재하는지 체크
 			$oDocumentModel = &getModel('document');

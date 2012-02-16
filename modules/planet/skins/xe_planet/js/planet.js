@@ -174,6 +174,7 @@ function planetPreview(obj) {
 	if($('btn_preview').checked){
 		$Element('preview').removeClass('off');
 		var text = obj.value;
+		text = text.replace(/&/ig,'&amp;');
 		text = text.replace(/</ig,'&lt;');
 		text = text.replace(/>/ig,'&gt;');
 		text = text.replace(/\.\.\./g, '…');

@@ -89,5 +89,40 @@
 		 **/
 		function recompileCache() {
 		}
+
+		function grammarConvert($content)
+		{
+			$content = htmlspecialchars($content);
+			$content = str_replace(array('...','--'), array('…','—'), $content);
+			$content = preg_replace('/\&quot;([^(&quot;)]+)\&quot;:([0-9]+)/i', '<a href="'.Context::getRequestUri().'$2">$1</a>', $content);
+
+			$content = preg_replace('/\&quot;([^(&quot;)]+)\&quot;:(http|ftp|https|mms):\/\/([^ ]+)/is','<a href="$2://$3" onclick="window.open(this.href);return false;">$1</a>', $content);
+			
+			preg_match_all('/@([^\"@ ]+)( |$)/is',$content,$match);
+			$calling = array();
+			if($match[1] && is_array($match[1])){
+				$oMemberModel = &getModel('member');
+				$oPlanetModel = &getModel('planet');
+
+				foreach($match[1] as $k => $m){
+					$member_srl = $oMemberModel->getMemberSrlByNickName($m);
+					if($member_srl){
+						$oPlanet = $oPlanetModel->getMemberPlanet($member_srl);
+						if($oPlanet && $oPlanet->isExists()){
+							$str = sprintf('<a href="%s">%s</a> ',getFullUrl('','mid',$oPlanet->getPlanetMid()),'@'.$m);
+							$content = preg_replace('/@'.$m.'( |$)/is',$str,$content);
+
+							$logged_info = Context::get('logged_info');
+							if($logged_info->member_srl != $member_srl){
+								$calling[] = $oPlanet->getPlanetSrl();
+							}
+						}
+					}
+				}
+			}
+			$output->content = $content;
+			$output->calling = $calling;
+			return $output;
+		}
 	}
 ?>
