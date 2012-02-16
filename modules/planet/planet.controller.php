@@ -654,7 +654,6 @@
 			$oDocumentModel = &getModel('document');
 			$oDocument = $oDocumentModel->getDocument($obj->document_srl);
 			if(!$oDocument->isExists()) return new Object(-1,'msg_not_permitted');
-			if($oDocument->isLocked()) return new Object(-1,'test');
 
 			// comment 모듈의 model 객체 생성
 			$oCommentModel = &getModel('comment');
