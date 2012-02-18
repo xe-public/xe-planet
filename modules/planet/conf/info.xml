@@ -24,8 +24,8 @@
 	<description xml:lang="tr">Microblog Module.</description>
 	<description xml:lang="vi">Gói tạo MiniBlog.</description>
 	<description xml:lang="mn">Microblog Module.</description>
-	<version>0.1.1</version>
-	<date>2012-02-12</date>
+	<version>0.1.2</version>
+	<date>2012-02-18</date>
 	<author email_address="sol@ngleader.com">
 		<name xml:lang="en">sol</name>
 		<name xml:lang="ko">sol</name>
