@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <module>
 	<grants>
 		<grant name="create" default="member">
@@ -96,13 +96,13 @@
 		<action name="procPlanetVoteContent" type="controller" />
 
 
-		<action name="dispPlanetAdminSetup" type="view" standalone="true" admin_index="true" />
-		<action name="dispPlanetAdminList" type="view" standalone="true" />
+		<action name="dispPlanetAdminSetup" type="view" standalone="true" menu_name="planet" menu_index="true" admin_index="true" />
+		<action name="dispPlanetAdminList" type="view" standalone="true" menu_name="planet" />
 		<action name="dispPlanetAdminInsert" type="view" standalone="true" />
-		<action name="dispPlanetAdminDelete" type="view" standalone="true" />
-		<action name="dispPlanetAdminGrantInfo" type="view" standalone="true" />
-		<action name="dispPlanetAdminSkinInfo" type="view" standalone="true" />
-		<action name="dispPlanetAdminAdditionalSetup" type="view" standalone="true" menu_name="planet"  />
+		<action name="dispPlanetAdminDelete" type="view" standalone="true" menu_name="planet" />
+		<action name="dispPlanetAdminGrantInfo" type="view" standalone="true" menu_name="planet" />
+		<action name="dispPlanetAdminSkinInfo" type="view" standalone="true" menu_name="planet" />
+		<action name="dispPlanetAdminAdditionalSetup" type="view" standalone="true" menu_name="planet" />
 
 		<action name="procPlanetAdminInsertConfig" type="controller" standalone="true" />
 		<action name="procPlanetAdminInsert" type="controller" standalone="true" />
@@ -111,4 +111,20 @@
 		<action name="procPlanetInsertSMS" type="controller" />
 		<action name="procPlanetSetSMS" type="controller" />
 	</actions>
+	
+	<menus>
+		<menu name="planet" type="all">
+			<title xml:lang="en">Planet</title>
+			<title xml:lang="ko">플래닛</title>
+			<title xml:lang="zh-CN">Planet</title>
+			<title xml:lang="jp">Planet</title>
+			<title xml:lang="es">Planet</title>
+			<title xml:lang="ru">Planet</title>
+			<title xml:lang="fr">Planet</title>
+			<title xml:lang="zh-TW">Planet</title>
+			<title xml:lang="vi">Planet</title>
+			<title xml:lang="mn">Planet</title>
+			<title xml:lang="tr">Planet</title>
+		</menu>
+	</menus>
 </module>
