@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+	<title xml:lang="en">Planet</title>
+	<title xml:lang="ko">플래닛</title>
+	<title xml:lang="jp">プラネット</title>
+	<title xml:lang="zh-CN">微博</title>
+	<title xml:lang="zh-TW">微網誌</title>
+	<title xml:lang="fr">Planet</title>
+	<title xml:lang="de">Planet</title>
+	<title xml:lang="ru">Planet</title>
+	<title xml:lang="es">Planet</title>
+	<title xml:lang="tr">Planet</title>
+	<title xml:lang="vi">Planet</title>
+	<title xml:lang="mn">Planet</title>
+	<description xml:lang="en">Microblog Module.</description>
+	<description xml:lang="ko">마이크로블로그를 운영할 수 있는 모듈입니다.</description>
+	<description xml:lang="jp">Microblog Module.</description>
+	<description xml:lang="zh-CN">Microblog Module.</description>
+	<description xml:lang="zh-TW">Microblog Module.</description>
+	<description xml:lang="fr">Microblog Module.</description>
+	<description xml:lang="de">Microblog Module.</description>
+	<description xml:lang="ru">Microblog Module.</description>
+	<description xml:lang="es">Microblog Module.</description>
+	<description xml:lang="tr">Microblog Module.</description>
+	<description xml:lang="vi">Gói tạo MiniBlog.</description>
+	<description xml:lang="mn">Microblog Module.</description>
+	<version>0.1.2</version>
+	<date>2012-02-18</date>
+	<category>service</category>
+
+	<author email_address="sol@ngleader.com">
+		<name xml:lang="en">sol</name>
+		<name xml:lang="ko">sol</name>
+		<name xml:lang="jp">sol</name>
+		<name xml:lang="zh-CN">sol</name>
+		<name xml:lang="zh-TW">sol</name>
+		<name xml:lang="fr">sol</name>
+		<name xml:lang="de">sol</name>
+		<name xml:lang="ru">sol</name>
+		<name xml:lang="es">sol</name>
+		<name xml:lang="tr">sol</name>
+		<name xml:lang="vi">sol</name>
+		<name xml:lang="mn">sol</name>
+	</author>
+	<author email_address="zero@zeroboard.com">
+		<name xml:lang="en">zero</name>
+		<name xml:lang="ko">zero</name>
+		<name xml:lang="jp">zero</name>
+		<name xml:lang="zh-CN">zero</name>
+		<name xml:lang="zh-TW">zero</name>
+		<name xml:lang="fr">zero</name>
+		<name xml:lang="de">zero</name>
+		<name xml:lang="ru">zero</name>
+		<name xml:lang="es">zero</name>
+		<name xml:lang="tr">zero</name>
+		<name xml:lang="vi">zero</name>
+		<name xml:lang="mn">zero</name>
+	</author>
+	<author email_address="admin@folderfile.net" link="http://folderfile.net">
+		<name xml:lang="ko">김근홍</name>
+		<name xml:lang="en">Geunhong Kim</name>
+		<name xml:lang="jp">Geunhong Kim</name>
+		<name xml:lang="zh-CN">Geunhong Kim</name>
+		<name xml:lang="zh-TW">Geunhong Kim</name>
+		<name xml:lang="fr">Geunhong Kim</name>
+		<name xml:lang="de">Geunhong Kim</name>
+		<name xml:lang="ru">Geunhong Kim</name>
+		<name xml:lang="es">Geunhong Kim</name>
+		<name xml:lang="tr">Geunhong Kim</name>
+		<name xml:lang="vi">Geunhong Kim</name>
+		<name xml:lang="mn">Geunhong Kim</name>
+	</author>
+	<author email_address="misol.kr@gmail.com" link="http://twitter.com/misol221">
+		<name xml:lang="ko">misol(김민수)</name>
+		<name xml:lang="en">misol</name>
+		<name xml:lang="jp">misol</name>
+		<name xml:lang="zh-CN">misol</name>
+		<name xml:lang="zh-TW">misol</name>
+		<name xml:lang="fr">misol</name>
+		<name xml:lang="de">misol</name>
+		<name xml:lang="ru">misol</name>
+		<name xml:lang="es">misol</name>
+		<name xml:lang="tr">misol</name>
+		<name xml:lang="vi">misol</name>
+		<name xml:lang="mn">misol</name>
+	</author>
+</module>

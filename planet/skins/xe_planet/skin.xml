@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0.2">
+	<title xml:lang="en">Planet default skin</title>
+	<title xml:lang="ko">플래닛 기본 스킨</title>
+	<title xml:lang="jp">Planet基本スキン</title>
+	<title xml:lang="zh-CN">Planet默认皮肤</title>
+	<title xml:lang="zh-TW">Planet 基本面板</title>
+	<title xml:lang="fr">Planet default skin</title>
+	<title xml:lang="de">Planet default skin</title>
+	<title xml:lang="ru">Planet default skin</title>
+	<title xml:lang="es">Planet default skin</title>
+	<title xml:lang="tr">Planet default skin</title>
+	<title xml:lang="vi">Skin planet cơ bản</title>
+	<title xml:lang="mn">Planet default skin</title>
+	<description xml:lang="en">
+		Default skin of planet.
+	</description>
+	<description xml:lang="ko">
+		플래닛의 기본 스킨입니다.
+	</description>
+	<description xml:lang="jp">
+		PlanetXEの基本スキンです。
+	</description>
+	<description xml:lang="zh-CN">
+		PlanetXE默认皮肤。
+	</description>
+	<description xml:lang="zh-TW">
+		PlanetXE的預設面板。
+	</description>
+	<description xml:lang="fr">
+		Default skin of planet.
+	</description>
+	<description xml:lang="de">
+		Default skin of planet.
+	</description>
+	<description xml:lang="ru">
+		Default skin of planet.
+	</description>
+	<description xml:lang="es">
+		Default skin of planet.
+	</description>
+	<description xml:lang="tr">
+		Default skin of planet.
+	</description>
+	<description xml:lang="vi">
+		Skin cơ bản của PlanetXE.
+	</description>
+	<description xml:lang="mn">
+		Default skin of planet.
+	</description>
+	<version>0.1</version>
+	<date>2008-10-01</date>
+
+	<author email_address="naradesign@naradesign.com" link="http://www.naradesign.com">
+		<name xml:lang="en">Chan-Myung Jeong</name>
+		<name xml:lang="ko">정찬명</name>
+		<name xml:lang="jp">Chan-Myung Jeong</name>
+		<name xml:lang="zh-CN">Chan-Myung Jeong</name>
+		<name xml:lang="zh-TW">Chan-Myung Jeong</name>
+		<name xml:lang="fr">Chan-Myung Jeong</name>
+		<name xml:lang="de">Chan-Myung Jeong</name>
+		<name xml:lang="ru">Chan-Myung Jeong</name>
+		<name xml:lang="es">Chan-Myung Jeong</name>
+		<name xml:lang="tr">Chan-Myung Jeong</name>
+		<name xml:lang="vi">Chan-Myung Jeong</name>
+		<name xml:lang="tr">Chan-Myung Jeong</name>
+	</author>
+	<author email_address="admin@folderfile.net" link="http://folderfile.net">
+		<name xml:lang="en">Geunhong Kim</name>
+		<name xml:lang="ko">김근홍</name>
+		<name xml:lang="jp">Geunhong Kim</name>
+		<name xml:lang="zh-CN">Geunhong Kim</name>
+		<name xml:lang="zh-TW">Geunhong Kim</name>
+		<name xml:lang="fr">Geunhong Kim</name>
+		<name xml:lang="de">Geunhong Kim</name>
+		<name xml:lang="ru">Geunhong Kim</name>
+		<name xml:lang="es">Geunhong Kim</name>
+		<name xml:lang="tr">Geunhong Kim</name>
+		<name xml:lang="vi">Geunhong Kim</name>
+		<name xml:lang="mn">Geunhong Kim</name>
+	</author>
+
+	<colorset>
+		<color name="blue">
+			<title xml:lang="en">Blue</title>
+			<title xml:lang="ko">파란색</title>
+			<title xml:lang="jp">青</title>
+			<title xml:lang="zh-CN">蓝色</title>
+			<title xml:lang="zh-TW">藍色</title>
+			<title xml:lang="fr">Blue</title>
+			<title xml:lang="de">Blue</title>
+			<title xml:lang="ru">Blue</title>
+			<title xml:lang="es">Blue</title>
+			<title xml:lang="tr">Blue</title>
+			<title xml:lang="vi">Blue</title>
+			<title xml:lang="mn">Blue</title>
+		</color>
+		<color name="cyan">
+			<title xml:lang="en">Cyan</title>
+			<title xml:lang="ko">청록색</title>
+			<title xml:lang="jp">青緑</title>
+			<title xml:lang="zh-CN">青绿色</title>
+			<title xml:lang="zh-TW">青綠色</title>
+			<title xml:lang="fr">Cyan</title>
+			<title xml:lang="de">Cyan</title>
+			<title xml:lang="ru">Cyan</title>
+			<title xml:lang="es">Cyan</title>
+			<title xml:lang="tr">Cyan</title>
+			<title xml:lang="vi">Cyan</title>
+			<title xml:lang="mn">Cyan</title>
+		</color>
+		<color name="green">
+			<title xml:lang="en">Green</title>
+			<title xml:lang="ko">녹색</title>
+			<title xml:lang="jp">緑</title>
+			<title xml:lang="zh-CN">绿色</title>
+			<title xml:lang="zh-TW">綠色</title>
+			<title xml:lang="fr">Green</title>
+			<title xml:lang="de">Green</title>
+			<title xml:lang="ru">Green</title>
+			<title xml:lang="es">Green</title>
+			<title xml:lang="tr">Green</title>
+			<title xml:lang="vi">Green</title>
+			<title xml:lang="mn">Green</title>
+		</color>
+		<color name="orange">
+			<title xml:lang="en">Orange</title>
+			<title xml:lang="ko">주황색</title>
+			<title xml:lang="jp">オレンジ</title>
+			<title xml:lang="zh-CN">橙色</title>
+			<title xml:lang="zh-TW">橘色</title>
+			<title xml:lang="fr">Orange</title>
+			<title xml:lang="de">Orange</title>
+			<title xml:lang="ru">Orange</title>
+			<title xml:lang="es">Orange</title>
+			<title xml:lang="tr">Orange</title>
+			<title xml:lang="vi">Orange</title>
+			<title xml:lang="mn">Orange</title>
+		</color>
+		<color name="red">
+			<title xml:lang="en">Red</title>
+			<title xml:lang="ko">빨간색</title>
+			<title xml:lang="jp">赤</title>
+			<title xml:lang="zh-CN">红色</title>
+			<title xml:lang="zh-TW">紅色</title>
+			<title xml:lang="fr">Red</title>
+			<title xml:lang="de">Red</title>
+			<title xml:lang="ru">Red</title>
+			<title xml:lang="es">Red</title>
+			<title xml:lang="tr">Red</title>
+			<title xml:lang="vi">Red</title>
+			<title xml:lang="mn">Red</title>
+		</color>
+		<color name="gray">
+			<title xml:lang="en">Gray</title>
+			<title xml:lang="ko">회색</title>
+			<title xml:lang="jp">グレー</title>
+			<title xml:lang="zh-CN">灰色</title>
+			<title xml:lang="zh-TW">灰色</title>
+			<title xml:lang="fr">Gray</title>
+			<title xml:lang="de">Gray</title>
+			<title xml:lang="ru">Gray</title>
+			<title xml:lang="es">Gray</title>
+			<title xml:lang="tr">Gray</title>
+			<title xml:lang="vi">Gray</title>
+			<title xml:lang="mn">Gray</title>
+		</color>
+	</colorset>
+
+	<extra_vars>
+		<var name="logo_title" type="text">
+			<title xml:lang="en">Planet title</title>
+			<title xml:lang="ko">플래닛 제목</title>
+			<title xml:lang="jp">プラネットタイトル</title>
+			<title xml:lang="zh-CN">微博标题</title>
+			<title xml:lang="zh-TW">微網誌標題</title>
+			<title xml:lang="fr">planet title</title>
+			<title xml:lang="de">Planet title</title>
+			<title xml:lang="ru">Planet title</title>
+			<title xml:lang="es">Planet title</title>
+			<title xml:lang="tr">Planet title</title>
+			<title xml:lang="vi">Tiêu đề Planet</title>
+			<title xml:lang="mn">Planet title</title>
+		</var>
+		<var name="logo_image" type="image">
+			<title xml:lang="en">Planet logo</title>
+			<title xml:lang="ko">플래닛 로고</title>
+			<title xml:lang="jp">プラネットメインロゴイメージ</title>
+			<title xml:lang="zh-CN">微博LOGO</title>
+			<title xml:lang="zh-TW">微網誌 Logo</title>
+			<title xml:lang="fr">Planet logo</title>
+			<title xml:lang="de">Planet logo</title>
+			<title xml:lang="ru">Planet logo</title>
+			<title xml:lang="es">Planet logo</title>
+			<title xml:lang="tr">Planet logo</title>
+			<title xml:lang="vi">Planet logo</title>
+			<title xml:lang="mn">Planet logo</title>
+		</var>
+		<var name="notice" type="text">
+			<title xml:lang="en">one-line notice</title>
+			<title xml:lang="ko">한 줄 공지</title>
+			<title xml:lang="jp">プラネットお知らせ（一言）</title>
+			<title xml:lang="zh-CN">微博公告(一句)</title>
+			<title xml:lang="zh-TW">微網誌公告</title>
+			<title xml:lang="fr">one-line notice</title>
+			<title xml:lang="de">one-line notice</title>
+			<title xml:lang="ru">one-line notice</title>
+			<title xml:lang="es">one-line notice</title>
+			<title xml:lang="tr">one-line notice</title>
+			<title xml:lang="vi">Thông báo</title>
+			<title xml:lang="mn">one-line notice</title>
+		</var>
+		<var name="display_search" type="select">
+			<title xml:lang="en">Display planet in search?</title>
+			<title xml:lang="ko">플래닛 검색 출력</title>
+			<title xml:lang="jp">プラネット検索表示</title>
+			<title xml:lang="zh-CN">微博搜索</title>
+			<title xml:lang="zh-TW">微網誌搜尋</title>
+			<title xml:lang="fr">Display planet in search?</title>
+			<title xml:lang="de">Display planet in search?</title>
+			<title xml:lang="ru">Display planet in search?</title>
+			<title xml:lang="es">Display planet in search?</title>
+			<title xml:lang="tr">Display planet in search?</title>
+			<title xml:lang="vi">Tìm kiếm</title>
+			<title xml:lang="mn">Display planet in search?</title>
+			<options value="Y">
+				<title xml:lang="en">Display</title>
+				<title xml:lang="ko">출력</title>
+				<title xml:lang="jp">表示</title>
+				<title xml:lang="zh-CN">显示</title>
+				<title xml:lang="zh-TW">顯示</title>
+				<title xml:lang="fr">Display</title>
+				<title xml:lang="de">Display</title>
+				<title xml:lang="ru">Display</title>
+				<title xml:lang="es">Display</title>
+				<title xml:lang="tr">Display</title>
+				<title xml:lang="vi">Hiển thị</title>
+				<title xml:lang="mn">Display</title>
+			</options>
+			<options value="N">
+				<title xml:lang="en">Don't display</title>
+				<title xml:lang="ko">출력하지 않음</title>
+				<title xml:lang="jp">非表示</title>
+				<title xml:lang="zh-CN">不显示</title>
+				<title xml:lang="zh-TW">隱藏</title>
+				<title xml:lang="fr">Don't display</title>
+				<title xml:lang="de">Don't display</title>
+				<title xml:lang="ru">Don't display</title>
+				<title xml:lang="es">Don't display</title>
+				<title xml:lang="tr">Don't display</title>
+				<title xml:lang="vi">Không hiển thị</title>
+				<title xml:lang="mn">Don't display</title>
+			</options>
+		</var>
+		<var name="display_menu" type="select">
+			<title xml:lang="en">Display planet menu</title>
+			<title xml:lang="ko">플래닛 메뉴 출력</title>
+			<title xml:lang="jp">プラネットメニュー表示</title>
+			<title xml:lang="zh-CN">微博菜单</title>
+			<title xml:lang="zh-TW">微網誌選單</title>
+			<title xml:lang="fr">Display planet menu</title>
+			<title xml:lang="de">Display planet menu</title>
+			<title xml:lang="ru">Display planet menu</title>
+			<title xml:lang="es">Display planet menu</title>
+			<title xml:lang="tr">Display planet menu</title>
+			<title xml:lang="vi">Display planet menu</title>
+			<title xml:lang="mn">Display planet menu</title>
+			<options value="Y">
+				<title xml:lang="en">Display</title>
+				<title xml:lang="ko">출력</title>
+				<title xml:lang="jp">表示</title>
+				<title xml:lang="zh-CN">显示</title>
+				<title xml:lang="zh-TW">顯示</title>
+				<title xml:lang="fr">Display</title>
+				<title xml:lang="de">Display</title>
+				<title xml:lang="ru">Display</title>
+				<title xml:lang="es">Display</title>
+				<title xml:lang="tr">Display</title>
+				<title xml:lang="vi">Hiển thị</title>
+				<title xml:lang="mn">Display</title>
+			</options>
+			<options value="N">
+				<title xml:lang="en">Don't display</title>
+				<title xml:lang="ko">출력하지 않음</title>
+				<title xml:lang="jp">非表示</title>
+				<title xml:lang="zh-CN">不显示</title>
+				<title xml:lang="zh-TW">隱藏</title>
+				<title xml:lang="fr">Don't display</title>
+				<title xml:lang="de">Don't display</title>
+				<title xml:lang="ru">Don't display</title>
+				<title xml:lang="es">Don't display</title>
+				<title xml:lang="tr">Don't display</title>
+				<title xml:lang="vi">Không hiển thị</title>
+				<title xml:lang="mn">Don't display</title>
+			</options>
+		</var>
+	</extra_vars>
+</skin>
