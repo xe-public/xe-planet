@@ -113,7 +113,7 @@
 
 				<!--@if($myplanet->isExists())-->
 				<dl>
-					<dt>{$logged_info->nick_name}</dt>
+					<dt>{cut_str($logged_info->nick_name,8,'...')}</dt>
 					<dd>
 						<form id="writeReply:{$item->get('document_srl')}" action="./" method="post" onsubmit="return procFilter(this, insert_reply)">
 							<input name="document_srl" type="hidden" value="{$item->get('document_srl')}"/>
