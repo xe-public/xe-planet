@@ -9,9 +9,9 @@
 	$lang->planet_title = '플래닛 제목';
 	$lang->planet_url = '플래닛 URL';
 	$lang->planet_myplanet = '내 플래닛';
-	$lang->planet_whos_planet = "%s 님의 플래닛";
-	$lang->planet_whos_favorite = "%s 님의 즐겨찾기";
-	$lang->planet_whos_favorite_list = "'%s'님께서 즐겨찾는 플래닛";
+	$lang->planet_whos_planet = "%s님의 플래닛";
+	$lang->planet_whos_favorite = "%s님의 즐겨찾기";
+	$lang->planet_whos_favorite_list = "%s님께서 즐겨찾는 플래닛";
 	$lang->planet_favorite = "즐겨찾기";
 	$lang->cmd_additional_setup = "추가 설정";
 	$lang->planet_welcome = '축하합니다';
@@ -108,8 +108,8 @@
 	$lang->planet_nowhot_tag = '플래닛 실시간 인기태그';
 	$lang->cmd_planet_close_nowhot_tag = '실시간 인기태그 닫기';
 
-	$lang->about_planet_whats_textSearch_in_planet = "<strong>%s</strong>님의 플래닛에서 검색한 <strong>'%s'</strong> 에 대한 결과 입니다.";
-	$lang->about_planet_whats_textSearch = "<strong>'%s'</strong> 에 대한 전체 검색결과 입니다.";
+	$lang->about_planet_whats_textSearch_in_planet = "<strong>%s</strong>님의 플래닛에서 검색한 <strong>%s</strong>에 대한 결과 입니다.";
+	$lang->about_planet_whats_textSearch = "<strong>%s</strong>에 대한 전체 검색결과 입니다.";
 
 	$lang->planet_acticle = '글';
 	$lang->planet_persontag = '인물태그';
@@ -124,7 +124,7 @@
 	$lang->planet_article_preview = '미리보기';
 
 
-	$lang->planet_notice_title = "%s님 반갑습니다!<br>%s님의 생각, 의견, 정보, 지식 등을 자유롭고 편안하게 많은 분들과 나눌 수 있는 곳, 플래닛 입니다. 몇 가지 사용법을 안내해 드릴께요.^^";
+	$lang->planet_notice_title = "%s님 반갑습니다!<br />%s님의 생각, 의견, 정보, 지식 등을 자유롭고 편안하게 많은 분들과 나눌 수 있는 곳, 플래닛 입니다. 몇 가지 사용법을 안내해 드릴께요.^^";
 	$lang->planet_notice_list = array(
 		"'새글쓰기'창의 '열기' 버튼을 이용해 보세요. 글을 작성할 수 있는 창이 열립니다.",
 		"작성된 새글은 %s님의 플래닛을 방문하신 모든 분들이 볼 수 있고 댓글도 추가할 수 있습니다.",
