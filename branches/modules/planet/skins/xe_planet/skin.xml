@@ -48,8 +48,8 @@
 	<description xml:lang="mn">
 		Default skin of planet.
 	</description>
-	<version>0.1</version>
-	<date>2008-10-01</date>
+	<version>0.1.1</version>
+	<date>2012-08-10</date>
 
 	<author email_address="naradesign@naradesign.com" link="http://www.naradesign.com">
 		<name xml:lang="en">Chan-Myung Jeong</name>
@@ -195,6 +195,42 @@
 			<title xml:lang="tr">Planet logo</title>
 			<title xml:lang="vi">Planet logo</title>
 			<title xml:lang="mn">Planet logo</title>
+			<description xml:lang="en">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="ko">
+			로고가 입력되지 않으면 플래닛 제목이 표시됩니다.
+			</description>
+			<description xml:lang="jp">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="zh-CN">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="zh-TW">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="fr">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="de">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="ru">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="es">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="tr">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="vi">
+			If not entered, planet title will appear.
+			</description>
+			<description xml:lang="mn">
+			If not entered, planet title will appear.
+			</description>
 		</var>
 		<var name="notice" type="text">
 			<title xml:lang="en">one-line notice</title>
