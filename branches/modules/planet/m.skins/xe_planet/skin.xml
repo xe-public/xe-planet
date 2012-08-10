@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin version="0.2">
-	<title xml:lang="en">Planet default skin</title>
-	<title xml:lang="ko">플래닛 기본 스킨</title>
-	<title xml:lang="jp">Planet基本スキン</title>
-	<title xml:lang="zh-CN">Planet默认皮肤</title>
-	<title xml:lang="zh-TW">Planet 基本面板</title>
-	<title xml:lang="fr">Planet default skin</title>
-	<title xml:lang="de">Planet default skin</title>
-	<title xml:lang="ru">Planet default skin</title>
-	<title xml:lang="es">Planet default skin</title>
-	<title xml:lang="tr">Planet default skin</title>
-	<title xml:lang="vi">Skin planet cơ bản</title>
-	<title xml:lang="mn">Planet default skin</title>
+	<title xml:lang="en">Planet default mobile skin</title>
+	<title xml:lang="ko">플래닛 기본 모바일 스킨</title>
+	<title xml:lang="jp">Planet default mobile skin</title>
+	<title xml:lang="zh-CN">Planet default mobile skin</title>
+	<title xml:lang="zh-TW">PPlanet default mobile skin</title>
+	<title xml:lang="fr">Planet default mobile skin</title>
+	<title xml:lang="de">Planet default mobile skin</title>
+	<title xml:lang="ru">Planet default mobile skin</title>
+	<title xml:lang="es">Planet default mobile skin</title>
+	<title xml:lang="tr">Planet default mobile skin</title>
+	<title xml:lang="vi">Planet default mobile skin</title>
+	<title xml:lang="mn">Planet default mobile skin</title>
 	<description xml:lang="en">
-		Default skin of planet.
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="ko">
-		플래닛의 기본 스킨입니다.
+		플래닛의 기본 모바일 스킨입니다.
 	</description>
 	<description xml:lang="jp">
-		PlanetXEの基本スキンです。
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="zh-CN">
-		PlanetXE默认皮肤。
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="zh-TW">
-		PlanetXE的預設面板。
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="fr">
-		Default skin of planet.
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="de">
-		Default skin of planet.
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="ru">
-		Default skin of planet.
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="es">
-		Default skin of planet.
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="tr">
-		Default skin of planet.
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="vi">
-		Skin cơ bản của PlanetXE.
+		Default mobile skin of planet.
 	</description>
 	<description xml:lang="mn">
-		Default skin of planet.
+		Default mobile skin of planet.
 	</description>
-	<version>0.1.1</version>
+	<version>0.1</version>
 	<date>2012-08-10</date>
 
 	<author email_address="naradesign@naradesign.com" link="http://www.naradesign.com">
