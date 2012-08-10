@@ -18,7 +18,7 @@ function planet_showTodoList(o){
 }
 
 function planet_reload_todo(){
-    $('commentList').innerHTML = '<div class="commentHeader"><h3 class="exTitle">TODO</h3><span class="button strong black todoWrite"><button type="button" onclick="showWritePostTodo()">TODO Post</button></span></div>\n<div id="todoList" class="commentBody todoManager"></div>\n<div id="todoList_page" class="pagination a1"></div>\n<div class="commentHeader"><h3 class="exTitle">DONE</h3></div>\n<div id="doneList" class="commentBody todoManager"></div>\n<div id="doneList_page" class="pagination a1"></div>\n<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>\n';
+    $('commentList').innerHTML = '<div class="commentHeader"><h3 class="exTitle">TODO</h3><span class="button todoWrite"><button type="button" onclick="showWritePostTodo()">TODO Post</button></span></div>\n<div id="todoList" class="commentBody todoManager"></div>\n<div id="todoList_page" class="pagination a1"></div>\n<div class="commentHeader"><h3 class="exTitle">DONE</h3></div>\n<div id="doneList" class="commentBody todoManager"></div>\n<div id="doneList_page" class="pagination a1"></div>\n<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>\n';
     planet_getTodo(1);
     planet_getDone(1);
 }
@@ -70,7 +70,7 @@ function result_planet_getTodo(ret_obj,response_tags, params, fo_obj) {
 
             o.push('<input type="hidden" id="tag:'+it[i]['document_srl']+'"  value="'+tag+'" /><li>');
             o.push(it[i]['content']);
-            o.push('<span class="button small"><img src="./common/tpl/images/iconCheckGreen.gif" alt="" class="icon" /><button type="button" id="document_srl:'+it[i]['document_srl']+'"  onclick="planet_todo_setDone(this)">DONE</button></span>');
+            o.push('<span class="btns"><img src="./addons/planet_todo/iconCheckGreen.gif" alt="" class="icon" /><button type="button" id="document_srl:'+it[i]['document_srl']+'"  onclick="planet_todo_setDone(this)">Done</button></span>');
             o.push('<span class="time">');
             o.push(it[i]['regdate']);
             o.push('</span>');
@@ -142,8 +142,8 @@ function result_planet_getDone(ret_obj,response_tags, params, fo_obj) {
 
             o.push('<input type="hidden" id="tag:'+it[i]['document_srl']+'"  value="'+tag+'" /><li>');
             o.push(it[i]['content']);
-            o.push('<span class="button small"><img src="./common/tpl/images/iconCheckGreen.gif" alt="" class="icon" /><button type="button" id="document_srl:'+it[i]['document_srl']+'" onclick="planet_todo_setDone(this)">REDO</button></span>');
-            o.push('<span class="button small"><img src="./common/tpl/images/iconX.gif" alt="" class="icon" /><button type="button" onclick="planet_todo_setDel('+it[i]['document_srl']+')">Delete</button></span>');
+            o.push('<span class="btns"><img src="./addons/planet_todo/iconCheckGreen.gif" alt="" class="icon" /><button type="button" id="document_srl:'+it[i]['document_srl']+'" onclick="planet_todo_setDone(this)">Redo</button></span>');
+            o.push('<span class="btns"><img src="./addons/planet_todo/iconX.gif" alt="" class="icon" /><button type="button" onclick="planet_todo_setDel('+it[i]['document_srl']+')">Delete</button></span>');
             o.push("</li>\n");
         }
 
