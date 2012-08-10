@@ -25,6 +25,8 @@
 			$oModuleModel = &getModel('module');
 			$skin_list = $oModuleModel->getSkins($this->module_path);
 			Context::set('skin_list',$skin_list);
+			$mskin_list = $oModuleModel->getSkins($this->module_path, 'm.skins');
+			Context::set('mskin_list',$mskin_list);
 
 			$oMemberModel = &getModel('member');
 			$group_list = $oMemberModel->getGroups();
@@ -34,8 +36,8 @@
 			if(is_array($this->module_info->smstag)) Context::set('smstag', join(',',$this->module_info->smstag));
 
 			// 레이아웃 목록을 구해옴
-			$oLayoutMode = &getModel('layout');
-			$layout_list = $oLayoutMode->getLayoutList();
+			$oLayoutModel = &getModel('layout');
+			$layout_list = $oLayoutModel->getLayoutList();
 			Context::set('layout_list', $layout_list);
 
 

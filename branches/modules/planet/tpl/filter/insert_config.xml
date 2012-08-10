@@ -18,6 +18,7 @@
 		<param name="planet_tagtab" target="planet_tagtab" />
 		<param name="planet_tagtab_after" target="planet_tagtab_after" />
 		<param name="planet_smstag" target="planet_smstag" />
+		<param name="view_mobile" target="view_mobile" />
 		<param name="use_mobile" target="use_mobile" />
 		<param name="use_me2day" target="use_me2day" />
 		<param name="use_rss" target="use_rss" />
