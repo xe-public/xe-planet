@@ -49,7 +49,7 @@
 			<!--// Original Text -->
 			<div class="comment">
 				<!--@if($planet->getMid() != $item->getPlanetMid())-->
-				<h3 class="identity"> <a href="{getUrl('','mid',$item->getPlanetMid())}"><img src="{$item->getPlanetPhotoSrc()}" width="96" height="96" alt="{htmlspecialchars($item->nick_name)}" /></a><em><a href="#" class="member_{$item->getMemberSrl()}" onclick="return false;">{$item->getNickName()}</a></em> </h3>
+				<h3 class="identity"> <a href="{getUrl('','mid',$item->getPlanetMid())}"><img src="{$item->getPlanetPhotoSrc()}" width="96" height="96" alt="{htmlspecialchars($item->nick_name)}" /></a><em><a href="#" class="member_{$item->getMemberSrl()}" onclick="return false;">{cut_str($logged_info->nick_name,8,'...')}</a></em> </h3>
 				<!--@end-->
 				<div class="tongue">
 					<div class="post">
@@ -113,7 +113,7 @@
 
 				<!--@if($myplanet->isExists())-->
 				<dl>
-					<dt>{cut_str($logged_info->nick_name,8,'...')}</dt>
+					<dt>{$logged_info->nick_name}</dt>
 					<dd>
 						<form id="writeReply:{$item->get('document_srl')}" action="./" method="post" onsubmit="return procFilter(this, insert_reply)">
 							<input name="document_srl" type="hidden" value="{$item->get('document_srl')}"/>
