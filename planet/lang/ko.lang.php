@@ -27,13 +27,15 @@
 	$lang->about_planet_mid = '플래닛 접속 주소는 http://XE주소/플래닛주소 와 같이 바로 접속가능할 수 있는 주소를 뜻합니다';
 
 	$lang->planet_default_skin = '플래닛 기본 스킨';
-	$lang->about_planet_default_skin = '플래닛 메인 페이지 및 생성된 플래닛들의 기본 스킨으로 설정됩니다';
+	$lang->planet_default_mobile_skin = '플래닛 기본 모바일 스킨';
+	$lang->about_planet_default_skin = '플래닛 메인 페이지 및 생성된 플래닛들의 기본 스킨으로 설정됩니다.';
+	$lang->about_planet_mobile_default_skin = '모바일 플래닛 기본 스킨으로 설정됩니다.';
 
 	$lang->planet_comment = '플래닛 한줄 소개';
-	$lang->about_planet_comment = '플래닛 한줄 소개는 플래닛 접속시 브라우저 제목과 플래닛의 한줄 소개란에 표시되는 내용입니다';
+	$lang->about_planet_comment = '플래닛 한줄 소개는 플래닛 접속시 브라우저 제목과 플래닛의 한줄 소개란에 표시되는 내용입니다.';
 
 	$lang->use_signup = '회원가입 연결';
-	$lang->about_use_signup = '회원가입 연결을 선택하시면 플래닛의 상단메뉴에 회원가입할 수 있는 링크가 나타납니다';
+	$lang->about_use_signup = '회원가입 연결을 선택하시면 플래닛의 상단메뉴에 회원가입할 수 있는 링크가 나타납니다.';
 
 
 	$lang->cmd_create_planet = '내 플래닛 만들기';
@@ -172,6 +174,8 @@
 	$lang->planet_smstag = 'SMS 등록 Tag';
 	$lang->about_planet_smstag = '콤마(,)로 여러개의 Tag를 지정할 수 있으며, SMS로 등록시에 등록 되는 Tag';
 
+	$lang->planet_mobile = '모바일 페이지 사용';
+	$lang->about_mobile = '모바일 기기로 접속시, 모바일에 최적회되 페이지를 보여줍니다.';
 	$lang->planet_use_mobile = 'SMS 연동';
 	$lang->about_use_mobile = '핸드폰 SMS로 글을 작성할 수 있게 합니다.';
 	$lang->planet_use_me2day = '미투데이 연동';

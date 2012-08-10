@@ -6,7 +6,7 @@
 	 **/
 
 	class planetView extends planet {
-
+		var $is_mobile = FALSE;
 		/**
 		 * @brief 초기화
 		 **/
@@ -30,8 +30,18 @@
 			/**
 			 * 스킨이 없으면 플래닛 기본 설정의 스킨으로 설정
 			 **/
-			if(!$this->module_info->skin) $this->module_info->skin = $this->module_info->planet_default_skin;
-			$template_path = sprintf("%sskins/%s/",$this->module_path, $this->module_info->skin);
+			
+
+			if(!$this->is_mobile)
+			{
+				if(!$this->module_info->skin) $this->module_info->skin = $this->module_info->planet_default_skin;
+				$template_path = sprintf("%sskins/%s/",$this->module_path, $this->module_info->skin);
+			}
+			else
+			{
+				if(!$this->module_info->mskin) $this->module_info->mskin = $this->module_info->planet_default_mobile_skin;
+				$template_path = sprintf("%sm.skins/%s/",$this->module_path, $this->module_info->mskin);
+			}
 			$this->setTemplatePath($template_path);
 
 			/**
