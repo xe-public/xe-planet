@@ -12,6 +12,7 @@
         $oPlanetModel = &getModel('planet');
         $countBookmark = $oPlanetModel->getTagSearchResultCount($planet->getModuleSrl(),'bookmark');
         Context::addHtmlHeader("<script type=\"text/javascript\">//<![CDATA[\nvar planet_bookmark_count=".( (int)$countBookmark).";\n//]]></script>");
+		Context::addHtmlHeader("<link rel=\"stylesheet\" href=\"./addons/planet_bookmark/style.css\" type=\"text/css\" />");
         Context::addJsFile('./addons/planet_bookmark/planet_bookmark.js');
     }
 ?>
