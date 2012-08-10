@@ -95,14 +95,10 @@ button span{ position:absolute; width:0; height:0; font:0/0 Sans-serif; visibili
 .exTab li.active a{ padding:7px 23px 0 20px; font-weight:bold;}
 
 /* Try Planet */
-.tryPlanet{ position:relative; height:90px; background:url(../images/boxTryPlanet.gif) repeat-x 0 0; margin-bottom:15px;}
-.tryPlanet *{ margin:0; padding:0;}
-.tryPlanet p{ position:relative; top:20px; margin-left:80px; font-family:NanumGothic,"Malgun Gothic", AppleGothic, Dotum, Gulim, Sans-serif; color:#50606b;}
-.tryPlanet .leftCap,
-.tryPlanet .rightCap{ position:absolute; display:block; top:0; width:5px; height:90px; overflow:hidden; background:url(../images/boxTryPlanet.gif) no-repeat; white-space:nowrap;}
-.tryPlanet .leftCap{ left:0; background-position:left bottom;}
-.tryPlanet .rightCap{ right:0; _left:100%; _margin-left:-4px; background-position:right bottom;}
-.tryPlanet .button{ position:absolute; top:30px; right:80px;}
+.tryPlanet{ position:relative; height:30px; margin-bottom:15px; }
+.tryPlanet .button{ position:absolute; top:0px; right:80px; }
+#planetContent div a span { position:relative; right:-60px; }
+
 
 /* Personal Header */
 .personalHeader{ position:relative; height:90px; background:url(../images/boxTryPlanet.gif) repeat-x 0 0; margin-bottom:15px;}
@@ -115,14 +111,9 @@ button span{ position:absolute; width:0; height:0; font:0/0 Sans-serif; visibili
 .personalHeader .rightCap{ right:0; _left:100%; _margin-left:-4px; background-position:right bottom;}
 .personalHeader .button{ position:absolute; top:30px; right:80px;}
 
-.searchHeader{ position:relative; height:90px; background:url(../images/boxTryPlanet.gif) repeat-x 0 0; margin-bottom:30px;}
-.searchHeader *{ margin:0; padding:0;}
-.searchHeader p{ position:absolute; top:27px; margin-left:80px; font-family:NanumGothic,"Malgun Gothic", AppleGothic, Dotum, Gulim, Sans-serif; color:#50606b;}
-.searchHeader p strong{ font:bold 18px NanumGothic,"Malgun Gothic", AppleGothic, Dotum, Gulim, Sans-serif;}
-.searchHeader .leftCap,
-.searchHeader .rightCap{ position:absolute; display:block; top:0; width:5px; height:90px; overflow:hidden; background:url(../images/boxTryPlanet.gif) no-repeat; white-space:nowrap;}
-.searchHeader .leftCap{ left:0; background-position:left bottom;}
-.searchHeader .rightCap{ right:0; _left:100%; _margin-left:-4px; background-position:right bottom;}
+.searchHeader { position:relative; height:70px; }
+.searchHeader p { word-break:break-all; } 
+
 
 /* My Info */
 .myInfo{ padding:20px 30px 20px 30px; margin-bottom:15px; position:relative; border:1px solid #e9e9e9; *zoom:1;}
