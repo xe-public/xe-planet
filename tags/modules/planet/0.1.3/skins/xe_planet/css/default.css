@@ -21,7 +21,7 @@ button span{ position:absolute; width:0; height:0; font:0/0 Sans-serif; visibili
 /* Layout */
 #planet {font-family:Sans-serif; margin:0; padding:0; }
 #container {}
-#planetHeader{ z-index:30; clear:both; margin:0 0 5px 0; overflow:hidden; *zoom:1; position:relative; height:70px;}
+#planetHeader{ z-index:30; clear:both; margin:0 0 5px 0; overflow:hidden; *zoom:1; position:relative; height:100%;}
 #planetHeader *{ margin:0; padding:0;}
 #planetHeader li{ list-style:none;}
 #planetBody{ clear:both; z-index:20;}
@@ -402,8 +402,8 @@ button span{ position:absolute; width:0; height:0; font:0/0 Sans-serif; visibili
 /* Author Footer */
 .authorFooter{ position:relative; clear:both; padding:12px 18px 0 17px; height:45px; _height /**/:57px; margin-bottom:10px; z-index:20; border:1px solid #dedede; border-top-color:#fff;}
 .authorFooter *{ margin:0; padding:0;}
-.authorFooter .memo{ position:absolute; left:17px; top:12px; width:500px; background:url(../images/boxMemo.gif) no-repeat;}
-.authorFooter .memo p{ display:block; height:20px; padding-top:9px; margin:0; font-size:12px;white-space:nowrap;}
+.authorFooter .memo{ position:absolute; left:17px; top:12px; width:500px; background:url(../images/boxMemo.gif) no-repeat; height:29px; }
+.authorFooter .memo p{ display:block; height:20px; padding-top:5px; margin:0; font-size:12px;white-space:nowrap; }
 .authorFooter .memo p .toggle,
 .authorFooter .memo li.first .toggle{ position:absolute; top:2px; right:2px; width:25px; height:25px; background:url(../images/arrowTagNavigation.gif) no-repeat center -9px;}
 .authorFooter .memo p .delete{ display:none;}
@@ -415,7 +415,7 @@ button span{ position:absolute; width:0; height:0; font:0/0 Sans-serif; visibili
 .authorFooter .memo p em a,
 .authorFooter .memo li em a{ color:#fff;}
 .authorFooter .memo p span,
-.authorFooter .memo li span{ position:relative; right:40px; float:right; color:#fff; font:11px AppleGothic, Dotum, Gulim, Sans-serif;}
+.authorFooter .memo li span{ position:relative; right:40px; float:right; color:#fff; font:11px AppleGothic, Dotum, Gulim, Sans-serif; top:3px; }
 .authorFooter .memo p span .delete,
 .authorFooter .memo li span .delete{ position:relative; left:5px; vertical-align:top; width:12px; height:11px; background:url(../images/buttonX.gif) no-repeat center;}
 .authorFooter .memo .pagination{ position:relative; top:-14px; display:none; padding:0 0 10px 0; clear:both; background:url(../images/boxMemo.gif) no-repeat left bottom;}
@@ -447,7 +447,7 @@ button span{ position:absolute; width:0; height:0; font:0/0 Sans-serif; visibili
 
 /* Author List */
 .authorList{ position:relative; padding:15px; background:#e7e7e7; border:1px solid #dedede; *zoom:1; z-index:10; clear:both;}
-.authorList *{ margin:0; padding:0;}
+.authorList *{ margin:0; padding:0; }
 .authorList .authorBody{ position:relative; margin-top:10px; padding:15px; border:1px solid #d7dfe2; background:#fff; *zoom:1; clear:both; overflow:hidden;}
 .authorList .authorBody .thumb{ float:left; border:1px solid #ccc; margin-right:-98px;}
 .authorList .authorBody .thumb img{ display:block;}
