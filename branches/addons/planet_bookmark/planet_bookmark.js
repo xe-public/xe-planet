@@ -49,7 +49,6 @@ function completeGetBookmark(ret_obj,response_tags, params, fo_obj) {
             o.push(it[i]['content']);
             if(tag) {
                 o.push('<div class="tag">');
-                o.push('<img src="'+request_uri+'addons/planet_bookmark/tag.gif" title="tag" />');
                 o.push(tag);
                 o.push('</div>');
             }
