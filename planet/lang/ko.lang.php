@@ -175,7 +175,7 @@
 	$lang->about_planet_smstag = '콤마(,)로 여러개의 Tag를 지정할 수 있으며, SMS로 등록시에 등록 되는 Tag';
 
 	$lang->planet_mobile = '모바일 페이지 사용';
-	$lang->about_mobile = '모바일 기기로 접속시, 모바일에 최적회되 페이지를 보여줍니다.';
+	$lang->about_mobile = '스마트폰 등을 이용하여 접속할 때 모바일 화면에 최적화된 레이아웃을 이용하도록 합니다.';
 	$lang->planet_use_mobile = 'SMS 연동';
 	$lang->about_use_mobile = '핸드폰 SMS로 글을 작성할 수 있게 합니다.';
 	$lang->planet_use_me2day = '미투데이 연동';
